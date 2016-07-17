@@ -1,0 +1,7 @@
+=begin page
+
+=object showcase: type=youtube, alternate-name=playitems, playlist="${id}", \
+                data-downloadable=yes, loads-more=yes, \
+                style=showcase_playitems
+
+=end page

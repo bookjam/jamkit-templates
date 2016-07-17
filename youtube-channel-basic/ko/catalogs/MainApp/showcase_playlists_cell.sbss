@@ -1,0 +1,6 @@
+import themes.sbss
+
+#img_thumbnail: width=0.9pw, height=0.50625pw, scale-mode=fill, margin="0.05pw 0 0.02pw 0"
+#label_title: width=0.9pw, height=1.5em, font-family=$SANSSERIF_NUMBER, font-size=1.3, text-color=$DEFAULT_COLOR, line-break-mode=tail-truncation
+#label_published: type=date, source-format="yyyy-MM-dd'T'HH:mm:ss.SSSX", format="yyyy년 MM월 dd일", width=0.9pw, height=0.8em, font-family=$SANSSERIF_ALTERNATE, font-size=0.8, text-color=$DEFAULT_COLOR, line-break-mode=tail-truncation
+#img_line: width=1pw, height=1dp, position=absolute, gravity=bottom, background-color=$THEME_HIGHLIGHT_COLOR

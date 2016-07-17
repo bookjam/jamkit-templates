@@ -1,0 +1,3 @@
+#showcase_playlists: width=1pw, height=1ph, more-count=20, \
+                     column-count=1, cell-size="1pw, 90dp", cell-spacing=8dp, \
+                     toolbar-height=135dp, header-spacing=5dp

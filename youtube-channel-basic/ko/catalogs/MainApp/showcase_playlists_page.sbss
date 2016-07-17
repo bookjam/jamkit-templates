@@ -1,0 +1,9 @@
+import themes.sbss
+
+#showcase_playitems: width=1pw, height=1ph, \
+                    more-count=20, \
+                    column-count=1, cell-size="1pw, 1ph", \
+                    page-enabled=yes, \
+                    toolbar-height=64dp
+
+/page: page-background-color=$THEME_COLOR_101

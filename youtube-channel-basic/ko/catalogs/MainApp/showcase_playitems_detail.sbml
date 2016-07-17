@@ -1,0 +1,10 @@
+=begin detail: page-background-color=#fff
+
+=object showcase: type=youtube, alternate-name=playitems, playlist="${id}", \
+                  width=1pw, height=1ph, \
+                  data-downloadable=yes, loads-more=yes, more-count=20, \
+                  column-count=1, cell-size="1pw, 1ph", \
+                  page-enabled=yes
+
+
+=end detail

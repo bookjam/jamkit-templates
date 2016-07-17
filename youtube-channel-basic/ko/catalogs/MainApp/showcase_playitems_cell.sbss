@@ -1,0 +1,7 @@
+import themes.sbss
+
+#youtube: width=1pw, height=0.562pw
+#label_title: width=0.9pw, align=left, number-of-lines=0, font-family=$SANSSERIF_NUMBER, font-size=1.1, text-color=$DEFAULT_COLOR, line-break-mode=word-wrap, margin-top=10dp, margin-left=10dp
+#label_published: type=date, source-format="yyyy-MM-dd'T'HH:mm:ss.SSSX", format="yyyy년 MM월 dd일", width=0.48pw, height=0.8em, align=left, font-family=$SANSSERIF_ALTERNATE, font-size=0.8, text-color=$DEFAULT_COLOR, line-break-mode=tail-truncation, margin-left=12dp, margin-top=6dp
+#label_description: width=0.48pw, height=0.8em, align=left, font-family=$SANSSERIF_ALTERNATE, font-size=0.8, text-color=$DEFAULT_COLOR, line-break-mode=tail-truncation
+

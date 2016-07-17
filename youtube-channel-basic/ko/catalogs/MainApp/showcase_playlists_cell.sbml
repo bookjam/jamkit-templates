@@ -1,0 +1,11 @@
+=begin cell
+
+=object image: image-downloadable=yes, image-url="${thumbnail.high}", style=img_thumbnail
+
+=object label: text="${title}", style=label_title
+
+=object label: text="${published-at}", style=label_published
+
+=object blank: style=img_line
+
+=end cell
