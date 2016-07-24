@@ -5,7 +5,7 @@
 =end title
 
 =begin player
-=(object button: type=prev, action=prev, target=owner, alt="이전", style=btn_prev)=          =(object button: action=rewind, seconds=15, target=owner, label="15", style=btn_rewind)=     =(object button: type=play, action=play, target=owner, alt="재생&중지", style=btn_play)=     =(object button: action=forward, seconds=15, target=owner, label="15", style=btn_forward)=          =(object button: type=next, action=next, target=owner, alt="다음", style=btn_next)=
+=(object button: type=prev, action=prev, target=owner, alt="이전", style=btn_prev)=          =(object button: action=rewind, seconds=15, target=owner, label="15", style=btn_rewind)=     =(object button: type=play, action=play, toggle=yes, target=owner, alt="재생&중지", style=btn_play)=     =(object button: action=forward, seconds=15, target=owner, label="15", style=btn_forward)=          =(object button: type=next, action=next, target=owner, alt="다음", style=btn_next)=
 =end player
 
 =begin slider
