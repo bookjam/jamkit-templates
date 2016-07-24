@@ -1,0 +1,9 @@
+=begin header
+
+=object image: image-downloadable=yes, image-url="${itunes.image}", style=img_bg
+
+=object image: image-downloadable=yes, image-url="${itunes.image}", style=img_cover
+
+=(object button: action=pane, pane=P_PODCAST_RECENT, target=object, object=P_001, label="${title}", style=btn_title)=
+
+=end header

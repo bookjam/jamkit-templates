@@ -1,0 +1,7 @@
+=begin catalog
+
+=object panes: name=podcast, \
+            saves-state=yes, id=P_001, \
+            style=panes_podcast
+
+=end catalog

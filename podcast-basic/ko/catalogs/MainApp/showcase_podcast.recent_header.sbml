@@ -1,0 +1,26 @@
+=begin header
+
+=object image: filename=background_image_0001.jpg, alt="배경 이미지", style=img_bg
+=object image: image-url="${itunes.image}", image-downloadable=yes, alt="커버", style=img_cover
+
+
+
+=object button: action=pane, pane=P_PODCAST_LIST, target=object, object=P_001, label="${title}", alt="팟캐스트 이름", style=btn_podcast
+
+
+
+=begin toolbar
+
+=(object label: type=title, style=label_episode)=
+
+=begin player
+=(object button: type=prev, action=prev, target=owner, alt="이전", style=btn_prev)=          =(object button: action=rewind, seconds=15, target=owner, label="15", style=btn_rewind)=     =(object button: type=play, action=play, target=owner, alt="재생&중지", style=btn_play)=     =(object button: action=forward, seconds=15, target=owner, label="15", style=btn_forward)=          =(object button: type=next, action=next, target=owner, alt="다음", style=btn_next)=
+=end player
+
+=begin slider
+=(object label: type=time, style=label_time)=  =(object slider: type=time, action=time, time="#_", target=owner, style=slider)=  =(object label: type=time, inverts=yes, style=label_time_inverts)=
+=end slider
+
+=end toolbar
+
+=end header

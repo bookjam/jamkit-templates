@@ -1,0 +1,17 @@
+=begin cell
+
+=object label: text="${title}", style=label_title
+
+=object label: text="${itunes.duration}", style=label_duration
+
+=object label: type=date, text="${published-at}", style=label_date
+
+
+=begin download
+=object button: type=download, action=download, filename="${filename}", url="${url}", hides-when-selected=yes, alt="다운로드", style=btn_download
+=object label: type=download, filename="${filename}", alt="다운로드 중", style=label_download
+=end download
+
+=object blank: style=img_line
+
+=end cell
