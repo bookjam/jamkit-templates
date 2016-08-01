@@ -27,3 +27,7 @@ if $STATE == "focused"
     #label_published: text-color=$THEME_COLOR_100
     /cell: page-background-color=$THEME_COLOR_01
 end
+
+
+
+#youtube: width=1dp, height=1dp, position=abosolute

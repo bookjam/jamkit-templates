@@ -7,12 +7,15 @@ import themes.sbss
 #img_count: filename=btn_list_white.png, width=14dp, height=12dp
 #label_count: width=100dp, height=12dp, font-family=$SANSSERIF_BOLD, text-color=$THEME_COLOR_101
 
-/cell: display=block, width=1pw, height=1ph, border-width=1dp, border-color=$DEFAULT_COLOR_DIM, page-background-color=$THEME_COLOR_00
+/cell: display=block, width=1pw, height=1ph, page-background-color=$THEME_COLOR_00
 /cell/count: margin-left=10dp
 
 if $SCREEN_SIZE > "7.0"
-    #label_title: font-size=2
-    #label_count: font-size=1.1
+    #label_title: font-size=1.6
+    #label_count: font-size=1
+    if $ORIENTATION == "portrait"
+    else
+    end
 else
     #label_title: font-size=1.4
     #label_count: font-size=0.9

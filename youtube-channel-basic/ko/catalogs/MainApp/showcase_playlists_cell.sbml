@@ -3,7 +3,7 @@
 =object image: image-downloadable=yes, image-url="${thumbnail.high}", style=img_thumbnail
 
 =begin count
-=(object image: style=img_count)= =(object label: text="${item-count}개", style=label_count)=
+=(object image: style=img_count)= =(object label: text="${item-count} VIDEOS", style=label_count)=
 =end count
 
 =object label: text="${title}", style=label_title

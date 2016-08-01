@@ -1,0 +1,6 @@
+import themes.sbss
+
+#youtube: width=0.7pw, height=0.39375pw, position=absolute, gravity=center, background-color=$DEFAULT_COLOR_DIM, border-color=$WHITE_COLOR_DIM, border-width=5dp
+#btn_close: image=subview_btn_close.png, width=70dp, height=70dp, position=absolute, gravity=top-left, x=20dp, y=40dp
+
+/popup: page-background-color=$BLACK_COLOR_DEEP_DIM, text-color=$WHITE_COLOR

@@ -1,12 +1,17 @@
 import themes.sbss
 
-#showcase_playlists: width=1pw, height=100%, more-count=20, \
-                    column-count=1, cell-spacing=0.025pw, content-margin=0.025pw, \
-                    toolbar-height=100dp, auto-hides-toolbar=yes, header-spacing=100dp
+#showcase_playlists: width=1pw, height=100%, more-count=20
 
 if $SCREEN_SIZE > "7.0"
-#showcase_playlists:
+    #showcase_playlists: toolbar-height=140dp
+    if $ORIENTATION == "portrait"
+        #showcase_playlists: column-count=2, cell-size="0, 0.38pw",cell-spacing=0.01pw, content-margin=0.02pw
+    else
+        #showcase_playlists: column-count=3, cell-size="0, 0.28pw", cell-spacing=0.01pw, content-margin=0.015pw
+    end
 else
+    #showcase_playlists: column-count=1, cell-spacing=0.025pw, content-margin=0.025pw, \
+                        auto-hides-toolbar=yes, toolbar-height=100dp, header-spacing=100dp
     if $SCREEN_SIZE > "5.2"
         #showcase_playlists: cell-size="0.95pw, 0.73pw"
     else
