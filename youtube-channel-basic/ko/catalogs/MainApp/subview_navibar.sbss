@@ -2,10 +2,10 @@ import themes.sbss
 
 #btn_back: width=44dp, height=44dp, position=absolute, gravity=left-bottom, \
         image=subview_btn_back.png
-#label_title: width=0.9pw, height=44dp, position=absolute, gravity=top, y=20dp, \
-            font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_100, text-align=center
+#label_title: width=0.8pw, height=44dp, position=absolute, gravity=top, y=20dp, \
+            font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_100, text-align=center, line-break-mode=tail-truncation
 
-/navibar: page-background-color=$BOOKJAM_COLOR_1
+/navibar: page-background-color=$THEME_COLOR_00
 
 if $SCREEN_SIZE > "7.0"
     #label_title: font-size=1.4

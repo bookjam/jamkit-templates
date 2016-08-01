@@ -1,3 +1,15 @@
-#showcase_playlists: width=1pw, height=1ph, more-count=20, \
-                    column-count=1, cell-size="1pw, 0.75pw", \
-                    toolbar-height=140dp
+import themes.sbss
+
+#showcase_playlists: width=1pw, height=100%, more-count=20, \
+                    column-count=1, cell-spacing=0.025pw, content-margin=0.025pw, \
+                    toolbar-height=100dp, auto-hides-toolbar=yes, header-spacing=100dp
+
+if $SCREEN_SIZE > "7.0"
+#showcase_playlists:
+else
+    if $SCREEN_SIZE > "5.2"
+        #showcase_playlists: cell-size="0.95pw, 0.73pw"
+    else
+        #showcase_playlists: cell-size="0.95pw, 0.75pw"
+    end
+end

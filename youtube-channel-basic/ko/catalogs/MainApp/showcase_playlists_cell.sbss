@@ -1,6 +1,19 @@
 import themes.sbss
 
-#img_thumbnail: width=0.9pw, height=0.50625pw, scale-mode=fill, margin="0.05pw 0 0.02pw 0"
-#label_title: width=0.9pw, height=1.5em, font-family=$SANSSERIF_NUMBER, font-size=1.3, text-color=$DEFAULT_COLOR, line-break-mode=tail-truncation
-#label_published: type=date, source-format="yyyy-MM-dd'T'HH:mm:ss.SSSX", format="yyyy년 MM월 dd일", width=0.9pw, height=0.8em, font-family=$SANSSERIF_ALTERNATE, font-size=0.8, text-color=$DEFAULT_COLOR, line-break-mode=tail-truncation
-#img_line: width=1pw, height=1dp, position=absolute, gravity=bottom, background-color=$THEME_HIGHLIGHT_COLOR
+#img_thumbnail: width=1pw, height=0.5625pw, scale-mode=fill, background-color=$BLACK_COLOR_DIM, margin-bottom=10dp
+#label_title: width=1pw, \
+            font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_101, line-break-mode=tail-truncation, \
+            content-padding="0 10dp", padding="10dp 0"
+#img_count: filename=btn_list_white.png, width=14dp, height=12dp
+#label_count: width=100dp, height=12dp, font-family=$SANSSERIF_BOLD, text-color=$THEME_COLOR_101
+
+/cell: display=block, width=1pw, height=1ph, border-width=1dp, border-color=$DEFAULT_COLOR_DIM, page-background-color=$THEME_COLOR_00
+/cell/count: margin-left=10dp
+
+if $SCREEN_SIZE > "7.0"
+    #label_title: font-size=2
+    #label_count: font-size=1.1
+else
+    #label_title: font-size=1.4
+    #label_count: font-size=0.9
+end

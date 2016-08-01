@@ -2,10 +2,10 @@
 
 =object image: image-downloadable=yes, image-url="${thumbnail.high}", style=img_thumbnail
 
+=begin count
+=(object image: style=img_count)= =(object label: text="${item-count}개", style=label_count)=
+=end count
+
 =object label: text="${title}", style=label_title
-
-=object label: text="${published-at}", style=label_published
-
-=object blank: style=img_line
 
 =end cell

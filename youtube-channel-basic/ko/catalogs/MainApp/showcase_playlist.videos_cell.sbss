@@ -1,0 +1,29 @@
+import themes.sbss
+
+#img_youtube: scale-mode=fill
+#label_title: number-of-lines=2, font-family=$SANSSERIF_MEDIUM, text-color=$THEME_COLOR_105, line-break-mode=tail-truncation
+#label_published: font-family=$SANSSERIF_MEDIUM, text-color=$DEFAULT_COLOR
+#label_duration: position=absolute, \
+                font-family=$SANSSERIF_MEDIUM, text-color=$WHITE_COLOR, text-align=center, \
+                content-background-color=$BLACK_COLOR_DIM, content-padding="0 5dp"
+
+if $SCREEN_SIZE > "7.0"
+    #img_youtube: width=1pw, height=0.5625pw, margin-bottom=10dp
+    #label_title: width=1pw, font-size=1.3, content-padding="0 5dp"
+    #label_published: width=1pw, font-size=0.9, content-padding="0 5dp"
+    #label_duration: width=0.17pw, height=0.08pw, gravity=top-left, x=10dp, y=0.45pw, font-size=0.8
+    /cell/title: margin-bottom=10dp
+else
+    #img_youtube: width=0.4pw, height=0.22pw, flow=yes, margin-right=10dp
+    #label_title: width=0.5pw, font-size=1.2
+    #label_published: width=0.5pw, font-size=0.8
+    #label_duration: width=0.13pw, height=0.05pw, gravity=bottom-left, x=0.04pw, y=-0.04pw, font-size=0.7
+    /cell: margin=0.025pw
+    /cell/title: margin-bottom=5dp
+end
+
+if $STATE == "focused"
+    #label_title: text-color=$THEME_COLOR_100
+    #label_published: text-color=$THEME_COLOR_100
+    /cell: page-background-color=$THEME_COLOR_01
+end
