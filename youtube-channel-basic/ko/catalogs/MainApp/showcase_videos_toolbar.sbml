@@ -1,5 +1,7 @@
 =begin cell
 
-=object youtube: id=Y_001, info-hidden=yes, style=youtube
+=object showcase: type=youtube, alternate-name=videos.player, playlist="${id}", \
+                data-downloadable=yes, loads-more=yes, \
+                style=showcase_videos
 
 =end cell

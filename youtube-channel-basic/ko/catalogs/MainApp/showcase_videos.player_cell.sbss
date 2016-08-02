@@ -1,0 +1,5 @@
+import themes.sbss
+
+#youtube: width=1pw, height=1ph
+
+/cell: page-background-color=$DEFAULT_COLOR_DIM

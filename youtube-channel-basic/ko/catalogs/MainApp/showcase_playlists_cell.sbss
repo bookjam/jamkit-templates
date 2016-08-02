@@ -20,3 +20,11 @@ else
     #label_title: font-size=1.4
     #label_count: font-size=0.9
 end
+
+if ${item-count} == "1"
+    #label_count: text="${item-count} VIDEO"
+else
+    #label_count: text="${item-count} VIDEOS"
+end
+
+

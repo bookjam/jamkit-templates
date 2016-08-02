@@ -1,0 +1,5 @@
+=begin cell
+
+=object youtube: id=Y_001, video-id=${video-id}, info-hidden=yes, style=youtube
+
+=end cell
