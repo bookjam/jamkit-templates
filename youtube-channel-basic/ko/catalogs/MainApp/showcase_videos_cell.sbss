@@ -2,7 +2,7 @@ import themes.sbss
 
 #img_youtube: scale-mode=fill
 #label_title: number-of-lines=2, font-family=$SANSSERIF_MEDIUM, text-color=$THEME_COLOR_105, line-break-mode=tail-truncation
-#label_published: font-family=$SANSSERIF_MEDIUM, text-color=$DEFAULT_COLOR
+#label_published: font-family=$SANSSERIF_MEDIUM, text-color=$THEME_COLOR_108
 #label_duration: position=absolute, \
                 font-family=$SANSSERIF_MEDIUM, text-color=$WHITE_COLOR, text-align=center, \
                 content-background-color=$BLACK_COLOR_DIM, content-padding="0 5dp"
@@ -23,11 +23,7 @@ else
 end
 
 if $STATE == "focused"
-    #label_title: text-color=$THEME_COLOR_100
-    #label_published: text-color=$THEME_COLOR_100
+    #label_title: text-color=$THEME_COLOR_101
+    #label_published: text-color=$THEME_COLOR_101
     /cell: page-background-color=$THEME_COLOR_01
 end
-
-
-
-#youtube: width=1dp, height=1dp, position=abosolute

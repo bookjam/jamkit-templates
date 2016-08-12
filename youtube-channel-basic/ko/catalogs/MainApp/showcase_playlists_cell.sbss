@@ -1,11 +1,11 @@
 import themes.sbss
 
-#img_thumbnail: width=1pw, height=0.5625pw, scale-mode=fill, background-color=$BLACK_COLOR_DIM, margin-bottom=10dp
+#img_thumbnail: width=1pw, height=0.5625pw, scale-mode=fill, background-color=$THEME_COLOR_07, margin-bottom=10dp
 #label_title: width=1pw, \
-            font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_101, line-break-mode=tail-truncation, \
+            font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_100, line-break-mode=tail-truncation, \
             content-padding="0 10dp", padding="10dp 0"
 #img_count: filename=btn_list_white.png, width=14dp, height=12dp
-#label_count: width=100dp, height=12dp, font-family=$SANSSERIF_BOLD, text-color=$THEME_COLOR_101
+#label_count: width=100dp, height=12dp, font-family=$SANSSERIF_BOLD, text-color=$THEME_COLOR_100
 
 /cell: display=block, width=1pw, height=1ph, page-background-color=$THEME_COLOR_00
 /cell/count: margin-left=10dp

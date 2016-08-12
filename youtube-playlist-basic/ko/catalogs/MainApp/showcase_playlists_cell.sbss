@@ -1,0 +1,7 @@
+import themes.sbss
+
+#showcase_playitems: width=1pw, height=1pw, \
+                    column-count=1, cell-size="1pw, 0.85pw", max-cell-count=1, \
+                    header-height=0.15pw
+
+/cell: display=block, width=1pw, height=1ph, border-width=1dp, border-color=$DEFAULT_COLOR_DIM

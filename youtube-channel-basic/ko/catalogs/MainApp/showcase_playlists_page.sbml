@@ -1,4 +1,4 @@
-=begin page
+=begin page: action-when-loaded=popup-close
 
 =object showcase: type=youtube, alternate-name=videos, playlist="${id}", \
                 data-downloadable=yes, loads-more=yes, \

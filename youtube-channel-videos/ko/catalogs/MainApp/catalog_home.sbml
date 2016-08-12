@@ -1,0 +1,13 @@
+=begin catalog
+
+=object showcase: type=youtube, alternate-name=videos, \
+                channel=UCT-_4GqC-yLY1xtTHhwY0hA, filter=video, \
+                data-downloadable=yes, loads-more=yes, \
+                search-mode=yes, \
+                sortable=yes, sortkey=date, \
+                selectable=yes, action-when-selected=popup, \
+                history-enabled=yes, history="${id}", \
+                has-toolbar=yes, toolbar-position=top, \
+                style=showcase_videos
+
+=end catalog

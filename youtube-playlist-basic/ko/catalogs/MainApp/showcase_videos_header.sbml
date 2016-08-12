@@ -1,0 +1,7 @@
+=begin cell
+
+=object label: text="${item-count}  >", style=label_count
+
+=object button: action=page, display-unit="${id}", alternate-name=playlists, label="${title}", style=btn_title
+
+=end cell

@@ -3,7 +3,7 @@ import themes.sbss
 #showcase_videos: width=1pw, height=1ph, \
                 toolbar-position=top, toolbar-height=0.5625pw
 
-/page: page-background-color=$THEME_COLOR_101
+/page: page-background-color=$THEME_COLOR_02
 
 if $SCREEN_SIZE > "7.0"
     #showcase_videos: cell-spacing=0.01pw, content-margin=0.01pw

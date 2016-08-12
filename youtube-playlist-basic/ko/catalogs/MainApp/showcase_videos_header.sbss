@@ -1,0 +1,12 @@
+import themes.sbss
+
+#label_count: width=1pw, height=0.15pw, position=absolute, \
+            font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_105, text-align=right, content-padding="0 10dp 0 0"
+#btn_title: width=0.85pw, height=0.15pw, position=absolute, \
+            label-font-family=$SANSSERIF_MEDIUM, label-font-size=1.1, label-color=$THEME_COLOR_105, label-align=left, content-padding="0 0 0 10dp"
+
+if $SCREEN_SIZE > "7.0"
+    #label_count: font-size=0.8
+else
+    #label_count: font-size=0.7
+end

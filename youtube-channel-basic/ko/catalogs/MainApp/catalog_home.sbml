@@ -1,6 +1,6 @@
 =begin home
 
-=object showcase: type=youtube, alternate-name=playlists, channel="${YOUTUBE_CHANNEL_ID}", \
+=object showcase: type=youtube, alternate-name=playlists, channel=UCYWJ32GJbOgtzU2uHh0OMCQ, \
                 data-downloadable=yes, loads-more=yes, \
                 selectable=yes, action-when-selected=page, \
                 has-toolbar=yes, toolbar-position=top, \

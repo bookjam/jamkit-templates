@@ -1,0 +1,8 @@
+=begin cell
+
+=object showcase: type=youtube, alternate-name=videos, playlist="${id}", \
+                data-downloadable=yes, loads-more=yes, \
+                has-header=yes, header-display-unit="${id}", \
+                style=showcase_playitems
+
+=end cell
