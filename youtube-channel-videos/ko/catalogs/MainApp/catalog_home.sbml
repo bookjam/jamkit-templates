@@ -1,7 +1,7 @@
 =begin catalog
 
 =object showcase: type=youtube, alternate-name=videos, \
-                channel=UCT-_4GqC-yLY1xtTHhwY0hA, filter=video, \
+                channel="${YOUTUBE_CHANNEL_ID}", filter=video, \
                 data-downloadable=yes, loads-more=yes, \
                 search-mode=yes, \
                 sortable=yes, sortkey=date, \

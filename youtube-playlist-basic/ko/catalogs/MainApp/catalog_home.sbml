@@ -1,6 +1,6 @@
 =begin catalog
 
-=object showcase: type=youtube, alternate-name=videos, playlist=PL3Eb1N33oAXijqFKrO83hDEN0HPwaecV3, \
+=object showcase: type=youtube, alternate-name=videos, playlist="${YOUTUBE_PLAYLIST_ID}", \
                 data-downloadable=yes, loads-more=yes, \
                 selectable=yes, action-when-selected=popup, \
                 history-enabled=yes, history="${id}", \

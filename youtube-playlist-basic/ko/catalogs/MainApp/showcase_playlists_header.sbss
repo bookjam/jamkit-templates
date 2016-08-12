@@ -7,11 +7,13 @@ import themes.sbss
             font-family=$SANSSERIF_MEDIUM, font-size=1.2, text-color=$WHITE_COLOR, \
             position=absolute, gravity=left-bottom, content-padding-left=80dp, content-background-color=$BLACK_COLOR_DIM
 
-/toolbar: page-background-color=$THEME_HIGHLIGHT_COLOR
-
+/toolbar: page-background-color=$THEME_COLOR_07
 
 if $SCREEN_SIZE > "7.0"
-    #img_banner: image-url="${banner.image}", height=140dp
+    #img_banner: height=140dp
+    if $ORIENTATION == "portrait"
+    else
+    end
 else
-    #img_banner: image-url="${banner.mobile}", height=100dp
+    #img_banner: height=100dp
 end
