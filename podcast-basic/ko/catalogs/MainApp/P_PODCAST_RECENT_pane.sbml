@@ -1,6 +1,6 @@
 =object showcase: type=podcast, alternate-name=podcast.recent, \
                 data-downloadable=yes, data-url="${PODCAST_URL}", \
-                selectable=yes, action-when-selected=link, params-when-selected="target=embeded", \
+                selectable=yes, action-when-selected=link, \
                 has-header=yes, \
                 action-when-selected@audio=play, \
                 style=showcase_podcast
