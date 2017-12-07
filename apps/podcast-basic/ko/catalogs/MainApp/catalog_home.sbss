@@ -1,0 +1,5 @@
+import themes.sbss
+
+#panes_podcast: width=1pw, height=1ph
+
+/catalog: page-background-color=$THEME_COLOR_02

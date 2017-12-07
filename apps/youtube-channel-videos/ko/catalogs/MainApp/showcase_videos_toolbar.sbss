@@ -1,0 +1,19 @@
+import themes.sbss
+
+#img_banner: width=1pw, content-gravity=top, scale-mode=fill, position=absolute
+#img_profile: width=60dp, height=60dp, content-border-radius=30dp, \
+            position=absolute, gravity=left-bottom, x=10dp, y=-5dp
+#label_title: width=1pw, height=40dp, \
+            font-family=$SANSSERIF_MEDIUM, font-size=1.2, text-color=$WHITE_COLOR, \
+            position=absolute, gravity=left-bottom, content-padding-left=80dp, content-background-color=$BLACK_COLOR_DIM
+
+/toolbar: page-background-color=$THEME_COLOR_07
+
+if $SCREEN_SIZE > "7.0"
+    #img_banner: height=140dp
+    if $ORIENTATION == "portrait"
+    else
+    end
+else
+    #img_banner: height=100dp
+end

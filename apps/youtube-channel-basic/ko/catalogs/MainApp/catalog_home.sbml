@@ -1,0 +1,10 @@
+=begin home
+
+=object showcase: type=youtube, alternate-name=playlists, channel="${YOUTUBE_CHANNEL_ID}", \
+                data-downloadable=yes, loads-more=yes, \
+                selectable=yes, action-when-selected=page, \
+                has-toolbar=yes, toolbar-position=top, \
+                has-own-title=yes, \
+                style=showcase_playlists
+
+=end home

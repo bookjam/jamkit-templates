@@ -1,0 +1,10 @@
+=begin page: action-when-loaded=popup-close
+
+=object showcase: type=youtube, alternate-name=videos, playlist="${id}", \
+                data-downloadable=yes, loads-more=yes, \
+                selectable=yes, \
+                history-enabled=yes, history="${id}", \
+                has-own-title=yes, \
+                style=showcase_videos
+
+=end page

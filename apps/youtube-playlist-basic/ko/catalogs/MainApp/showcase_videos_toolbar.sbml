@@ -1,0 +1,8 @@
+=begin toolbar
+
+=object showcase: type=youtube, alternate-name=playlists, channel="${YOUTUBE_CHANNEL_ID}", \
+                data-downloadable=yes, loads-more=yes, \
+                has-header=yes, \
+                style=showcase_playlists
+
+=end toolbar

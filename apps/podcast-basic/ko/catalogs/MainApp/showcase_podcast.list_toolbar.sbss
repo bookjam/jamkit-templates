@@ -1,0 +1,33 @@
+import themes.sbss
+
+#label_title: width=0.9pw, height=20dp, font-family=$SANSSERIF_MEDIUM, text-color=$DEFAULT_COLOR, text-align=center
+#btn_forward: image=podcast_btn_forward.png, width=30dp, height=30dp, \
+            label-font-family=$SANSSERIF_MEDIUM, label-font-size=0.7, label-color=$DEFAULT_COLOR
+#btn_rewind: image=podcast_btn_rewind.png, width=30dp, height=30dp, \
+            label-font-family=$SANSSERIF_MEDIUM, label-font-size=0.7, label-color=$DEFAULT_COLOR
+#btn_play: image=podcast_btn_play.png, selected-image=podcast_btn_pause.png
+#btn_prev: image=podcast_btn_prev.png, width=30dp, height=30dp
+#btn_next: image=podcast_btn_next.png, width=30dp, height=30dp
+#label_time: width=40dp, height=20dp, font-family=$SANSSERIF_LIGHT, font-size=0.7, text-align=right, text-color=$DEFAULT_COLOR
+#label_time_inverts: width=40dp, height=20dp, font-family=$SANSSERIF_LIGHT, font-size=0.7, text-align=left, text-color=$DEFAULT_COLOR
+#slider: height=20dp, scroll-thumb-image=podcast_scroll_thumb.png, track-color=$DEFAULT_COLOR, scroll-color=$THEME_COLOR_01
+
+/toolbar: text-align=center, page-background-color=$DEFAULT_COLOR_DIM
+/toolbar/title: margin-bottom=10dp
+/toolbar/player: height=30dp
+/toolbar/slider: height=20dp
+
+if $SCREEN_SIZE > "7.0"
+    #label_title: font-size=1.1
+    #slider: width=0.5pw
+    /toolbar: margin=20dp
+else
+    #label_title: font-size=0.9
+    /toolbar: margin=10dp
+    if $SCREEN_SIZE > "4"
+        #slider: width=0.65pw
+    else
+        #slider: width=0.6pw
+    end
+end
+

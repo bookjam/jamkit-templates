@@ -1,0 +1,10 @@
+=begin catalog
+
+=object showcase: type=youtube, alternate-name=videos, playlist="${YOUTUBE_PLAYLIST_ID}", \
+                data-downloadable=yes, loads-more=yes, \
+                selectable=yes, action-when-selected=popup, \
+                history-enabled=yes, history="${id}", \
+                has-toolbar=yes, toolbar-position=top, \
+                style=showcase_videos
+
+=end catalog

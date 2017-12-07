@@ -1,0 +1,12 @@
+import themes.sbss
+
+#showcase_podcast: width=1pw, height=1ph, column-count=1
+
+/pane: page-background-color=$THEME_COLOR_02
+
+if $SCREEN_SIZE > "7.0"
+    #showcase_podcast: cell-size="1pw, 130dp", header-height=190dp, toolbar-height=120dp
+else
+    #showcase_podcast: cell-size="1pw, 110dp", header-height=120dp, toolbar-height=110dp
+end
+

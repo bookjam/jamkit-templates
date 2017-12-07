@@ -1,0 +1,7 @@
+=begin popup
+
+=object youtube: video-id="${video-id}", id=Y_001, autoplay=yes, plays-inline=no, style=youtube
+
+=object button: action=popup-close, style=btn_close
+
+=end popup
