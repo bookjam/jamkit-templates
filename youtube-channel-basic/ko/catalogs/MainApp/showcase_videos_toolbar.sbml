@@ -1,3 +1,0 @@
-=object showcase: type=youtube, alternate-name=videos.player, playlist="${id}", \
-                data-downloadable=yes, loads-more=yes, \
-                style=showcase_videos

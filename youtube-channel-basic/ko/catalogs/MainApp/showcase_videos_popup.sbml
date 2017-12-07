@@ -1,7 +1,0 @@
-=begin popup
-
-=object youtube: video-id="${video-id}", id=Y_002, info-hidden=yes, autoplay=yes, style=youtube
-
-=object button: action=popup-close, style=btn_close
-
-=end popup

@@ -1,9 +1,0 @@
-=begin toolbar
-
-=object image: image-url="${banner.mobile}", image-downloadable=yes, style=img_banner
-
-=object label: text="${title}", style=label_title
-
-=object image: image-downloadable=yes, image-url="${thumbnail.high}", style=img_profile
-
-=end toolbar

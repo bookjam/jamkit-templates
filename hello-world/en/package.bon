@@ -1,7 +1,0 @@
-{
-	"id":"${APP_ID}",
-	"language":"en",
-	"version":"${APP_VERSION}",
-	"title":"${APP_TITLE}",
-	"description":"${APP_DESCRIPTION}"
-}

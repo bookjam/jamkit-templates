@@ -1,4 +1,0 @@
-import themes.sbss
-
-/home/welcome: display=block, position=abs, gravity=center, \
-			text-align=center, font-size=1.2
