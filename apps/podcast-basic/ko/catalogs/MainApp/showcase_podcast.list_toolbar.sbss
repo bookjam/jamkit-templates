@@ -17,14 +17,14 @@ import themes.sbss
 /toolbar/player: height=30dp
 /toolbar/slider: height=20dp
 
-if $SCREEN_SIZE > "7.0"
+if $SCREEN_WIDTH > 4.7
     #label_title: font-size=1.1
     #slider: width=0.5pw
     /toolbar: margin=20dp
 else
     #label_title: font-size=0.9
     /toolbar: margin=10dp
-    if $SCREEN_SIZE > "4"
+    if $SCREEN_SIZE > 4.0
         #slider: width=0.65pw
     else
         #slider: width=0.6pw

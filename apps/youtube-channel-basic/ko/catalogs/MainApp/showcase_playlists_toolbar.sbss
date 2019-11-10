@@ -9,7 +9,7 @@ import themes.sbss
 
 /toolbar: page-background-color=$THEME_COLOR_07
 
-if $SCREEN_SIZE > "7.0"
+if $SCREEN_WIDTH > 4.7
     #img_banner: height=140dp
     if $ORIENTATION == "portrait"
     else

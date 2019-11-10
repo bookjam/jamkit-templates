@@ -4,7 +4,7 @@ import themes.sbss
 
 #showcase_videos: width=1pw, height=1ph
 
-if $SCREEN_SIZE > "7.0"
+if $SCREEN_WIDTH > 4.7
     #showcase_videos: toolbar-height=140dp
     if $ORIENTATION == "portrait"
         #showcase_videos: column-count=2, cell-size="0, 0.4pw",cell-spacing=0.01pw, content-margin=0.02pw, more-count=20
@@ -14,7 +14,7 @@ if $SCREEN_SIZE > "7.0"
 else
     #showcase_videos: column-count=1, cell-spacing=0.025pw, content-margin=0.025pw, more-count=20, \
                     auto-hides-toolbar=yes, toolbar-height=100dp, header-spacing=100dp
-    if $SCREEN_SIZE > "5.2"
+    if $SCREEN_SIZE > 5.2
         #showcase_videos: cell-size="0.95pw, 0.75pw"
     else
         #showcase_videos: cell-size="0.95pw, 0.77pw"

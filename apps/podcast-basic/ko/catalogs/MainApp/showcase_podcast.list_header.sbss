@@ -8,7 +8,7 @@ import themes.sbss
 --/header: page-background-color=$THEME_COLOR_00
 /header: page-background-color=$BLACK_COLOR
 
-if $SCREEN_SIZE > "7"
+if $SCREEN_WIDTH > 4.7
     #img_bg: height=200dp
     #img_cover: width=140dp, height=140dp
     #btn_title: width=0.7pw, height=140dp, label-font-size=1.7, content-padding="0 0 0 20dp"
@@ -22,7 +22,7 @@ else
     #img_cover: width=80dp, height=80dp
     #btn_title: height=80dp, label-font-size=1.25, content-padding="0 0 0 10dp"
     /header: margin="25dp 0 15dp 15dp"
-    if $SCREEN_SIZE > "4"
+    if $SCREEN_SIZE > 4.0
         #btn_title: width=0.68pw
     else
         #btn_title: width=0.63pw

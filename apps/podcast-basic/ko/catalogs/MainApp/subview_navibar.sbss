@@ -6,7 +6,7 @@ import themes.sbss
 
 /navibar: page-background-color=$BOOKJAM_COLOR_1
 
-if $SCREEN_SIZE > "7.0"
+if $SCREEN_WIDTH > 4.7
     #label_title: font-size=1.4
 else
     #label_title: font-size=1.3

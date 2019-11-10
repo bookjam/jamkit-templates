@@ -3,7 +3,7 @@ import themes.sbss
 #btn_close: image=subview_btn_close.png, position=absolute, gravity=top-left
 #youtube: info-hidden=yes, position=absolute, gravity=center
 
-if $SCREEN_SIZE > "7.0"
+if $SCREEN_WIDTH > 4.7
     #btn_close: width=70dp, height=70dp, x=20dp, y=40dp
     #youtube: width=0.7pw, height=0.39375pw, \
             background-color=$DEFAULT_COLOR_DIM, border-color=$WHITE_COLOR_DIM, border-width=5dp

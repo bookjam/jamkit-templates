@@ -13,7 +13,7 @@ import themes.sbss
             font-family=$SANSSERIF_MEDIUM, text-color=$DEFAULT_COLOR, text-align=right
 #img_line: position=absolute, gravity=bottom, width=1pw, height=1dp, background-color=$DEFAULT_COLOR_DIM
 
-if $SCREEN_SIZE > "7.0"
+if $SCREEN_WIDTH > 4.7
     #label_title: height=60dp, font-size=1.4
     #label_duration: height=20dp, font-size=0.9
     #label_date: height=20dp, font-size=0.9

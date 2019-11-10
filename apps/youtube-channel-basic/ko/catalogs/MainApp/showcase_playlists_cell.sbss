@@ -10,7 +10,7 @@ import themes.sbss
 /cell: display=block, width=1pw, height=1ph, page-background-color=$THEME_COLOR_00
 /cell/count: margin-left=10dp
 
-if $SCREEN_SIZE > "7.0"
+if $SCREEN_WIDTH > 4.7
     #label_title: font-size=1.6
     #label_count: font-size=1
     if $ORIENTATION == "portrait"

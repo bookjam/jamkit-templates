@@ -5,7 +5,7 @@ import themes.sbss
 
 /page: page-background-color=$THEME_COLOR_02
 
-if $SCREEN_SIZE > "7.0"
+if $SCREEN_WIDTH > 4.7
     #showcase_videos: cell-spacing=0.01pw, content-margin=0.01pw
     if $ORIENTATION == "portrait"
         #showcase_videos: action-when-selected=play, params-when-selected="player=Y_001", \

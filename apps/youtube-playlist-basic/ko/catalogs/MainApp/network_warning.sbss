@@ -10,7 +10,7 @@ import themes.sbss
 /warning/note: display=block, width=1pw, position=absolute, gravity=center, y=-30dp, \
             font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_105, text-align=center
 
-if $SCREEN_SIZE > "7.0"
+if $SCREEN_WIDTH > 4.7
     #btn_reload: label-font-size=1.3
     /warning/note: font-size=1.4
 else
