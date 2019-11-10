@@ -7,11 +7,11 @@ import themes.sbss
 #label_date: format="yyyy년 MM월 d일 E요일", locale="ko_KR", , \
             width=0.84pw, align=left, \
             font-family=$SANSSERIF_LIGHT, text-color=$DEFAULT_COLOR, text-align=left, line-break-mode=tail-truncation
-#btn_download: position=absolute, gravity=right, \
+#btn_download: position=abs, gravity=right, \
             image=podcast_btn_download.png, width=30dp, height=30dp
-#label_download: width=60dp, height=30dp, position=absolute, gravity=right, \
+#label_download: width=60dp, height=30dp, position=abs, gravity=right, \
             font-family=$SANSSERIF_MEDIUM, text-color=$DEFAULT_COLOR, text-align=right
-#img_line: position=absolute, gravity=bottom, width=1pw, height=1dp, background-color=$DEFAULT_COLOR_DIM
+#img_line: position=abs, gravity=bottom, width=1pw, height=1dp, background-color=$DEFAULT_COLOR_DIM
 
 if $SCREEN_WIDTH > 4.7
     #label_title: height=60dp, font-size=1.4

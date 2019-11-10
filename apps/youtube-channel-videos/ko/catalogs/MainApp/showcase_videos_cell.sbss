@@ -3,7 +3,7 @@ import themes.sbss
 #img_youtube: width=1pw, height=0.5625pw, scale-mode=fill, background-color=$THEME_COLOR_07, margin-bottom=10dp
 #label_title: width=1pw, number-of-lines=2, font-family=$SANSSERIF_MEDIUM, text-color=$THEME_COLOR_100, line-break-mode=tail-truncation, content-padding="0 10dp", padding="10dp 0"
 #label_published: width=1pw, font-family=$SANSSERIF_MEDIUM, text-color=$THEME_COLOR_101, content-padding="0 10dp"
-#label_duration: position=absolute, \
+#label_duration: position=abs, \
                 font-family=$SANSSERIF_MEDIUM, text-color=$WHITE_COLOR, text-align=center, \
                 content-background-color=$BLACK_COLOR_DIM, content-padding="0 5dp"
 /cell: display=block, width=1pw, height=1ph, page-background-color=$THEME_COLOR_00

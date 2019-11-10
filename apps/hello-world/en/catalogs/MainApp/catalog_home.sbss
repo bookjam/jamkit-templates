@@ -1,4 +1,5 @@
 import themes.sbss
 
+/catalog: page-background-color=$THEME_COLOR_BACKGROUND, text-color=$THEME_COLOR_TEXT
 /catalog/welcome: display=block, position=abs, gravity=center, \
 			text-align=center, font-size=1.2

@@ -1,8 +1,8 @@
 import themes.sbss
 
-#btn_back: width=44dp, height=44dp, position=absolute, gravity=left-bottom, \
+#btn_back: width=44dp, height=44dp, position=abs, gravity=left-bottom, \
         image=subview_btn_back.png
-#label_title: width=0.8pw, height=44dp, position=absolute, gravity=top, y=20dp, \
+#label_title: width=0.8pw, height=44dp, position=abs, gravity=top, y=20dp, \
             font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_100, text-align=center, line-break-mode=tail-truncation
 
 /navibar: page-background-color=$THEME_COLOR_00

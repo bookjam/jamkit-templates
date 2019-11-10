@@ -1,8 +1,8 @@
 import themes.sbss
 
-#img_bg: width=1pw, height=1ph, position=absolute, scale-mode=fill, alpha=0.3
-#img_cover: position=absolute, gravity=center, y=-50dp, background-color=$DEFAULT_COLOR_DIM, border-width=5dp, border-color=$WHITE_COLOR
-#btn_podcast: width=1pw, height=50dp, position=absolute, gravity=top-right, y=20dp, \
+#img_bg: width=1pw, height=1ph, position=abs, scale-mode=fill, alpha=0.3
+#img_cover: position=abs, gravity=center, y=-50dp, background-color=$DEFAULT_COLOR_DIM, border-width=5dp, border-color=$WHITE_COLOR
+#btn_podcast: width=1pw, height=50dp, position=abs, gravity=top-right, y=20dp, \
             label-font-family=$SANSSERIF_MEDIUM, label-color=$WHITE_COLOR, label-align=right, \
             line-break-mode=tail-truncation, content-padding="0 20dp"
 #label_episode: width=1pw, height=50dp, font-family=$SANSSERIF_MEDIUM, text-color=$WHITE_COLOR, text-align=center, \
@@ -20,7 +20,7 @@ import themes.sbss
 #slider: height=20dp, scroll-thumb-image=podcast_scroll_thumb_white.png, track-color=$WHITE_COLOR, scroll-color=$THEME_COLOR_01
 
 /header: page-background-color=$BLACK_COLOR
-/header/toolbar: display=block, position=absolute, gravity=bottom, y=-40dp, text-align=center
+/header/toolbar: display=block, position=abs, gravity=bottom, y=-40dp, text-align=center
 /header/toolbar/player: height=30dp
 /header/toolbar/slider: height=20dp
 

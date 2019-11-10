@@ -1,7 +1,7 @@
 import themes.sbss
 
-#btn_back: image=subview_btn_back.png, width=44dp, height=44dp, position=absolute, gravity=left-bottom
-#label_title: width=0.8pw, height=44dp, position=absolute, gravity=top, y=20dp, \
+#btn_back: image=subview_btn_back.png, width=44dp, height=44dp, position=abs, gravity=left-bottom
+#label_title: width=0.8pw, height=44dp, position=abs, gravity=top, y=20dp, \
             font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_100, text-align=center, line-break-mode=tail-truncation
 
 /navibar: page-background-color=$BOOKJAM_COLOR_1

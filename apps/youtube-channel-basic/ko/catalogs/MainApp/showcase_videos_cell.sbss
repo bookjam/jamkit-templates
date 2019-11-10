@@ -3,7 +3,7 @@ import themes.sbss
 #img_youtube: scale-mode=fill
 #label_title: number-of-lines=2, font-family=$SANSSERIF_MEDIUM, text-color=$THEME_COLOR_105, line-break-mode=tail-truncation
 #label_published: font-family=$SANSSERIF_MEDIUM, text-color=$THEME_COLOR_108
-#label_duration: position=absolute, \
+#label_duration: position=abs, \
                 font-family=$SANSSERIF_MEDIUM, text-color=$WHITE_COLOR, text-align=center, \
                 content-background-color=$BLACK_COLOR_DIM, content-padding="0 5dp"
 

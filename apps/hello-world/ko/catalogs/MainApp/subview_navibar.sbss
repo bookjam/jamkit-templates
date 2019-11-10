@@ -1,11 +1,11 @@
 import themes.sbss
 
-#btn_back: width=44dp, height=44dp, position=absolute, gravity=left-bottom, \
+#btn_back: width=44dp, height=44dp, position=abs, gravity=left-bottom, \
         image=subview_btn_back.png
-#label_title: width=0.9pw, height=44dp, position=absolute, gravity=top, y=20dp, \
-            font-family=$SANS_KR_LIGHT, text-color=$THEME_COLOR_100, text-align=center
+#label_title: width=0.9pw, height=44dp, position=abs, gravity=top, y=20dp, \
+            font-family=$SANS_KR_LIGHT, text-color=$THEME_COLOR_NAVIBAR_TITLE, text-align=center
 
-/navibar: page-background-color=$PAGE_BG_COLOR
+/navibar: page-background-color=$THEME_COLOR_NAVIBAR_BACKGROUND
 
 if $SCREEN_WIDTH > 4.7
     #label_title: font-size=1.4

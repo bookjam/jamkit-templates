@@ -1,6 +1,6 @@
 import themes.sbss
 
-#img_bg: width=1pw, position=absolute, scale-mode=fill, alpha=0.3, content-gravity=center
+#img_bg: width=1pw, position=abs, scale-mode=fill, alpha=0.3, content-gravity=center
 #img_cover: flow=yes, align=left
 #btn_title: number-of-lines=2, label-font-family=$SANSSERIF_MEDIUM, label-color=$WHITE_COLOR, \
             label-align=left, line-break-mode=tail-truncation

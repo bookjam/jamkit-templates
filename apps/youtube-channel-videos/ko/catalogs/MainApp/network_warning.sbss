@@ -7,7 +7,7 @@ import themes.sbss
             margin-top=100dp
 
 /warning: page-background-color=$THEME_COLOR_02
-/warning/note: display=block, width=1pw, position=absolute, gravity=center, y=-30dp, \
+/warning/note: display=block, width=1pw, position=abs, gravity=center, y=-30dp, \
             font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_105, text-align=center
 
 if $SCREEN_WIDTH > 4.7
