@@ -1,0 +1,12 @@
+=begin catalog
+
+=object effect: filename="error.json", style=effect_error
+
+=begin message
+웹페이지에 연결할 수 없습니다.
+=end message
+
+=object button: action=subview, subview=V_HOME, target=self, \
+            label="다시 시도하기", style=btn_reload
+
+=end catalog

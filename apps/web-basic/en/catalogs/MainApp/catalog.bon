@@ -1,0 +1,20 @@
+{
+    "default-subview":"V_HOME",
+    "title":"Hello, World",
+    "version":"1.0",
+    "subviews":{
+    	"V_HOME":{
+    		"catalog":"MainApp",
+    		"subcatalog":"home",
+    		"type":"store"
+    	}
+	},
+	"subcatalogs":{
+		"home":{
+    		"controller":"StoreView",
+	    	"hides-navibar":"yes",
+    		"statusbar-style":"Default",
+    		"title":"Home"
+		}
+	}
+}
