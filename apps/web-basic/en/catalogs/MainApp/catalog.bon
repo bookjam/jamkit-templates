@@ -1,7 +1,7 @@
 {
-    "default-subview":"V_HOME",
-    "title":"Hello, World",
+    "title":"MainApp Catalog",
     "version":"1.0",
+    "default-subview":"V_HOME",
     "subviews":{
     	"V_HOME":{
     		"catalog":"MainApp",
