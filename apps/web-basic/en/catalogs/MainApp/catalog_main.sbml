@@ -1,5 +1,5 @@
-=begin main
+=begin catalog
 
 =object blank: id=container, style=blank_container
 
-=end main
+=end catalog
