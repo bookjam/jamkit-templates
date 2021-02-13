@@ -3,7 +3,7 @@ import themes.sbss
 #effect_error: width=280dp, height=280dp, position=abs, gravity=center, y=-120dp
 
 #btn_reload: width=190dp, height=40dp, position=abs, gravity=bottom, y=-80dp, \
-        label-font-family=$SANS_KR_MEDIUM, label-font-size=1.0, \
+        label-font-family=$SANS_MEDIUM, label-font-size=1.0, \
         label-color=$COLOR_WHITE, highlight-label-color=$COLOR_LIGHT_GRAY, \
         content-border-radius=2dp, content-background-color=$THEME_COLOR_ERROR
 
