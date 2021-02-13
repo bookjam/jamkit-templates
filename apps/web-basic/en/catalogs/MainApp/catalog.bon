@@ -7,6 +7,11 @@
     		"catalog":"MainApp",
     		"subcatalog":"home",
     		"type":"store"
+    	},
+		"V_ERROR":{
+    		"catalog":"MainApp",
+    		"subcatalog":"error",
+    		"type":"store"
     	}
 	},
 	"subcatalogs":{
@@ -15,6 +20,12 @@
 	    	"hides-navibar":"yes",
     		"statusbar-style":"Default",
     		"title":"Home"
+		},
+		"error":{
+    		"controller":"StoreView",
+	    	"hides-navibar":"yes",
+    		"statusbar-style":"Default",
+    		"title":"Error"
 		}
 	}
 }

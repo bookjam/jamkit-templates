@@ -1,0 +1,12 @@
+=begin catalog
+
+=object effect: filename="error.json", style=effect_error
+
+=begin message
+Could not connect to web page.
+=end message
+
+=object button: action=subview, subview=V_HOME, target=self, \
+            label="Try again", style=btn_reload
+
+=end catalog
