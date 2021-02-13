@@ -1,0 +1,9 @@
+=begin catalog
+
+=object web: id=web, url="${WEB_URL}", \
+            script-when-loaded=on_web_loaded, \
+            script-when-start=on_web_start, \
+            script-when-failed=on_web_failed, \
+            hidden=yes, style=web
+
+=end catalog
