@@ -1,0 +1,7 @@
+=begin catalog
+
+=object web: id=web, url="${WEB_URL}", style=web
+=object blank: style=blank_top
+=object progress: type=loading, owner=web, style=progress_web
+
+=end catalog

@@ -1,0 +1,7 @@
+{
+	id: "${APP_ID}",
+	language: ko,
+	version: 1.0,
+	title: "${APP_TITLE}",
+	description: "${APP_DESCRIPTION}"
+}
