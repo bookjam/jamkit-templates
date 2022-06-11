@@ -1,0 +1,13 @@
+import themes.sbss
+
+#img_logo: width=120dp
+
+/catalog: page-background-color=$THEME_COLOR_SPLASH_BACKGROUND
+
+if $ORIENTATION == "portrait"
+	#img_splash: width=0.9pw, height=0.9pw, position=abs, gravity=center, y=-0.24pw
+	#img_logo: position=abs, gravity=bottom, y=-(1eb+40dp)
+else
+	#img_splash: width=0.9ph, height=0.9ph, position=abs, gravity=center
+	#img_logo: position=abs, gravity=left-top, x=20dp, y=20dp
+end

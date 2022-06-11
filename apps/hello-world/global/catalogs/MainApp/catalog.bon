@@ -1,0 +1,26 @@
+{
+    "title": "MainApp Catalog",
+    "version": "1.0",
+    "default-subview": "V_HOME",
+    "subviews": {
+    	"V_HOME": {
+    		"catalog": "MainApp",
+    		"subcatalog": "home",
+    		"type": "store"
+    	}
+	},
+	"subcatalogs": {
+		"home": {
+    		"controller": "StoreView",
+	    	"hides-navibar": "yes",
+    		"statusbar-style": "Default",
+    		"title": "Home",
+			"title-ko": "홈"
+		}
+	},
+	"strings": {
+		"Info": {
+			"ko": "정보"
+		}
+	}
+}

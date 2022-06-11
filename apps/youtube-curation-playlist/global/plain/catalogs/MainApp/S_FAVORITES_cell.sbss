@@ -1,0 +1,29 @@
+import themes.sbss
+
+if $SCREEN_WIDTH > 4.7
+     $_NAVIBAR_HEIGHT = 60dp
+     $_FAVORITES_HEADER_HEIGHT = 74dp
+else
+     $_NAVIBAR_HEIGHT = 60dp
+     $_FAVORITES_HEADER_HEIGHT = 74dp
+end
+
+#section_navibar: width=1pw, height=$_NAVIBAR_HEIGHT, margin-top=1sbh, content-background-color=$THEME_COLOR_LIGHT_BACKGROUND
+#btn_navibar.right: width=44dp, height=44dp, position=abs, gravity=right, x=-5dp
+#btn_back: width=44dp, height=44dp, vertical-align=middle
+
+#showcase_favorites: width=1pw, height=100%, header-height=$_FAVORITES_HEADER_HEIGHT, \
+        keeps-offscreen-cells=yes, content-background-color=$THEME_COLOR_DARK_BACKGROUND
+
+/cell: page-background-color=$THEME_COLOR_LIGHT_BACKGROUND
+/cell/navibar: display=none
+/cell/navibar/title: display=block, margin="0 10dp", position=abs, gravity=center, \
+        font-family=$SANS_KR_MEDIUM, font-size=1.6, text-color=$COLOR_BLACK, text-align=left
+
+if $SCREEN_WIDTH > 5
+    #showcase_favorites: column-count=2, cell-size="(1pw-10dp*3)/2, 100dp", \
+            cell-spacing=10dp, content-margin=10dp, preload-count=16
+else
+    #showcase_favorites: column-count=1, cell-size="(1pw-10dp*2), 100dp", \
+            cell-spacing=10dp, content-margin=10dp, preload-count=8
+end

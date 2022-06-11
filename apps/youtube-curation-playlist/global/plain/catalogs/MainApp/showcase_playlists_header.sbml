@@ -1,0 +1,11 @@
+=begin header: data-binding=channel-info, script-when-data-changed=on_data_changed
+
+=object image: id=img.logo, url="${logo-url}", style=img_logo
+
+=object label: id=label.channel.title, text="${title}", style=label_title
+=object label: id=label.channel.subscriber, text="${subscriber-count}", style=label_subscriber
+
+=object button: id=btn.subscribe, label="구독", selected-label="구독중", \
+            script=subscribe, selected="${subscribing}", style=label_subscribe
+
+=end header

@@ -1,0 +1,40 @@
+=begin cell: script-when-back=on_back
+
+=object section: section=background, style=section_background
+=begin background: id=background
+=object image: filename=main_bg.png, style=img_background
+=object image: filename=main_logo.png, style=img_logo
+=end background
+
+=begin content
+=object cell: id=cell.player, display-unit=S_PLAYER, style=cell_player
+=object label: id=label.playlist.title, style=label_title
+
+=object section: section=control, style=section_control
+=begin control: id=control
+=object button: script=shuffle_music, style=btn_shuffle
+=object button: id=btn.prev, script=prev_music, style=btn_prev
+=object button: action=play, target=owner, type=play, owner="youtube.player", style=btn_play
+=object button: action=pause, target=owner, type=pause, owner="youtube.player", style=btn_pause
+=object button: id=btn.next, script=next_music, style=btn_next
+=object checkbox: id=btn.repeat, type=repeat, owner=showcase.musics, \
+            script-when-selected=repeat_music, script-when-deselected=repeat_music_done, \
+            style=checkbox_repeat
+=end control
+=end content
+
+=object section: section=toolbar, style=section_toolbar
+=begin toolbar: id=toolbar
+=begin buttons
+=(object button: image=toolbar_btn_musics.png, script=show_musics, style=btn_toolbar)= \
+=(object button: id=btn.toolbar.saver, image=toolbar_btn_saver.png, selected-image=toolbar_btn_saver_on.png, script=enter_screen_saver, style=btn_toolbar)= \
+=(object button: image=toolbar_btn_comments.png, script=show_comments, style=btn_toolbar)= \
+=(object button: image=toolbar_btn_playlists.png, script=show_playlists, style=btn_toolbar)=
+=end buttons
+=end toolbar
+
+=object cell: id=cell.musics, display-unit=S_MUSICS, hidden=yes, style=cell_musics
+=object cell: id=cell.comments, display-unit=S_COMMENTS, hidden=yes, style=cell_comments
+=object cell: id=cell.screen.saver, display-unit=S_SCREEN_SAVER, hidden=yes, style=cell_screen.saver
+
+=end cell

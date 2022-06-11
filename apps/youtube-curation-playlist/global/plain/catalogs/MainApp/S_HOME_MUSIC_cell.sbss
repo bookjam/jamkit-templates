@@ -1,0 +1,46 @@
+import themes.sbss
+
+#section_background: width=1pw, height=1ph-(60dp+1eb)+25dp, position=abs, gravity=top, y=-25dp, \
+		content-border-radius=25dp, content-background-color=$THEME_COLOR_MUSIC_BACKGROUND
+#img_background: width=1pw, height=1ph-25dp, position=abs, gravity=top, y=25dp, \
+        scale-mode=fill, content-gravity=top
+#img_logo: width=0.9pw, position=abs, gravity=top, y=25dp+0.1pw
+
+#cell_player: width=1pw-40dp, height=(1pw-40dp)*9/16+40dp
+#label_title: width=1pw-80dp, height=80dp, margin-top=10dp, \
+        number-of-lines=2, line-break-mode=tail-truncation,  \
+        font-family=$SANS_KR_REGULAR, font-size=1.4, text-align=center, \
+        text-color=$THEME_COLOR_MUSIC_TITLE
+
+-- 재생 컨트롤 --
+
+#section_control: width=1pw, height=78dp, margin-top=40dp
+
+#btn_play: image=mediabar_btn_play.png, width=78dp, height=78dp, \
+        position=abs, gravity=center, \
+        hides-when-disabled=yes, disable-when-selected=yes
+#btn_pause: image=mediabar_btn_pause.png, width=78dp, height=78dp, \
+        position=abs, gravity=center, \
+        hides-when-disabled=yes, disable-when-selected=yes, selected=yes
+#btn_prev: image=mediabar_btn_prev.png, width=54dp, height=54dp, \
+        position=abs, gravity=center, x=-84dp
+#btn_next: image=mediabar_btn_next.png, width=54dp, height=54dp, \
+        position=abs, gravity=center, x=84dp
+#btn_shuffle: image=mediabar_btn_shuffle.png, width=54dp, height=54dp, \
+        position=abs, gravity=center, x=-148dp
+#checkbox_repeat: image=mediabar_btn_repeat.png, selected-image=mediabar_btn_repeat_on.png,  width=54dp, height=54dp, \
+        position=abs, gravity=center, x=148dp
+
+#section_toolbar: width=1pw, height=60dp, position=abs, gravity=bottom, y=-1eb
+#btn_toolbar: width=44dp, height=44dp
+
+#cell_musics: width=1pw, height=1ph, position=abs, gravity=center
+#cell_comments: width=1pw, height=1ph, position=abs, gravity=center
+#cell_screen.saver: width=1pw, height=1ph, position=abs, gravity=center
+
+/cell/background: display=none
+/cell/content: display=block, position=abs, gravity=top, y=1pw*0.54
+/cell/content/control: display=none
+/cell/toolbar: display=none
+/cell/toolbar/buttons: display=block, position=abs, gravity=center, \
+        	margin="0 (1pw-44dp*4)/5", text-align=justify, text-justify=distribute-all-lines

@@ -1,0 +1,8 @@
+import themes.sbss
+
+#showcase_home: width=1pw, height=1ph, position=abs, gravity=center, \
+			cell-size="1pw 1ph", preload-count=1, keep-count=1
+
+#cell_favorites: width=1pw, height=1ph, position=abs, gravity=center
+
+/catalog: page-background-color=$THEME_COLOR_BACKGROUND, text-color=$THEME_COLOR_TEXT

@@ -1,0 +1,17 @@
+=begin cell: data-binding="favorite-${video-id}", script-when-data-changed=on_data_changed
+
+=object image: url="https://i.ytimg.com/vi/${video-id}/hqdefault.jpg", style=img_cover
+
+=begin info
+=begin title
+${title}
+=end title
+=begin stats
+${view-count} | ${published-at}
+=end stats
+=end info
+
+=object button: id=btn.favorite, script=toggle_favorite, selected="${favorite}", \
+            image=btn_favorite.png, selected-image=btn_favorite_on.png, style=btn_favorite
+
+=end cell

@@ -1,0 +1,21 @@
+=begin cell: script-when-loaded=on_loaded
+
+=object section: section=navibar, style=section_navibar
+=begin navibar: id=navibar
+=begin title
+=(object button: script=back, image=btn_back.png, style=btn_back)= @{플레이리스트}
+=end title
+=object button: image=btn_favorites.png, script=show_favorites, style=btn_navibar.right
+=end navibar
+
+=object showcase: id=showcase.playlists, name=playlists, data-script=feed_playlists, \
+            loads-more=yes, has-header=yes, header-display-unit=S_CHANNEL_INFO, \
+            selectable=yes, script-when-selected=on_select_playlist, \
+            uses-for-screenshot=yes, style=showcase_playlists
+
+=object cell: id=cell.subscribe, display-unit=S_SUBSCRIBE, hidden=yes, style=cell_subscribe
+
+=object web: id=web.channel, javascript-bridge="__$_bridge", uses-browser-user-agent=yes, \
+            script-when-loaded=on_web_loaded, hidden=yes, style=web_channel
+
+=end cell

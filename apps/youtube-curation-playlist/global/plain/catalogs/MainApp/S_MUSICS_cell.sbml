@@ -1,0 +1,11 @@
+=begin cell: script-when-loaded=on_loaded
+
+=object showcase: id=showcase.musics, type=media, name=musics, data-script=feed_musics, loop=yes, \
+            selectable=yes, script-when-selected=select_music, style=showcase_musics
+
+=object button: label="@{닫기}", script=close, style=btn_close
+
+=object web: id=web.musics, javascript-bridge="__$_bridge", uses-browser-user-agent=yes, \
+            script-when-loaded=on_web_loaded, hidden=yes, style=web_musics
+
+=end cell

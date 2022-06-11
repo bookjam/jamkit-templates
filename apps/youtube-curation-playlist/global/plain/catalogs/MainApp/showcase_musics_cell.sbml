@@ -1,0 +1,12 @@
+=begin cell
+
+=begin content
+=begin title
+${title}
+=end title
+=end content
+
+=object effect: filename=playing.json, style=effect_playing
+=object blank: style=blank_line
+
+=end cell

@@ -1,0 +1,65 @@
+=begin cell: script-when-loaded=on_loaded
+
+=object label: id=label.guide, text="@{자물쇠를 두 번 연속 터치하면 절전모드가 종료됩니다.}", \
+            style=label_guide
+=object label: id=label.onemore, text="@{한번 더 터치하세요.}", hidden=yes, \
+            style=label_onemore
+=object button: id=btn.unlock, image=btn_unlock.png, selected-image=btn_unlock_open.png, \
+            script=exit_screen_saver, style=btn_unlock
+
+=object label: id=label.timer.time, type=time, format="HH:mm:ss", owner=timer, hidden=yes, \
+            style=label_timer.time
+=object timer: id=timer, autostart=no, script-when-expired=on_timer_expired
+
+=object section: id=section.timer.button, section=timer.button, style=section_timer.button
+=begin button: id=timer.button
+=begin content
+=(object button: id=btn.timer, label="@{타이머 설정}", selected-label="@{타이머 취소}", script=on_timer_button, style=btn_timer)=
+=begin icon
+=(object image: filename="icon_timer.png", style=img_timer.button)=
+=end icon
+=end content
+=end button
+
+=object section: id=section.timer.popup, section=timer.popup, hidden=yes, style=section_timer.popup
+=begin popup: id=timer.popup, script-when-touched=noop
+=begin content
+=object label: id=label.timer.popup.time, text="00:00", style=label_timer.popup.time
+=begin updown
+=(object button: image=timer_btn_up.png, script=increase_timer, style=btn_timer.updown)=
+=(object button: image=timer_btn_down.png, script=decrease_timer, style=btn_timer.updown)=
+=end updown
+=begin labels
+=(object label: text="hour", style=label_timer.popup.unit)=\
+=(object label: text="min", style=label_timer.popup.unit)=
+=end labels
+=begin options
+=(object section: section=popup.option.15m, style=section_popup.option)=\
+=(object section: section=popup.option.30m, style=section_popup.option)=\
+=(object section: section=popup.option.1h, style=section_popup.option)=\
+=(object section: section=popup.option.2h, style=section_popup.option)=
+=begin section: id=popup.option.15m
+=object button: script=set_timer_15minutes, style=btn_popup.option
+15=[time.unit|m]=
+=end section
+=begin section: id=popup.option.30m
+=object button: script=set_timer_30minutes, style=btn_popup.option
+30=[time.unit|m]=
+=end section
+=begin section: id=popup.option.1h
+=object button: script=set_timer_1hour, style=btn_popup.option
+1=[time.unit|h]=
+=end section
+=begin section: id=popup.option.2h
+=object button: script=set_timer_2hours, style=btn_popup.option
+2=[time.unit|h]=
+=end section
+=end options
+=begin buttons
+=(object button: label="@{취소}", script=close_timer_popup, style=btn_popup.action)=\
+=(object button: label="@{시작}", script=start_timer, style=btn_popup.action.default)=
+=end buttons
+=end content
+=end popup
+
+=end cell

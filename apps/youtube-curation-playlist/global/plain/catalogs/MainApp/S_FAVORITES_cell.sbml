@@ -1,0 +1,15 @@
+=begin cell
+
+=object section: section=navibar, style=section_navibar
+=begin navibar: id=navibar
+=begin title
+즐겨찾기
+=end title
+=object button: image=btn_close.png, script=back, style=btn_navibar.right
+=end navibar
+
+=object showcase: id=showcase.favorites, name=favorites, \
+            selectable=yes, script-when-selected=on_select_favorite, \
+            style=showcase_favorites
+
+=end cell

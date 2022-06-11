@@ -1,0 +1,8 @@
+import themes.sbss
+
+#effect_loading: width=36dp, height=36dp, position=abs, gravity=center, y=-40dp
+
+if $LOADING != "yes"
+    #effect_loading: display=none
+    /empty: script-when-loaded=hide
+end

@@ -1,0 +1,12 @@
+import themes.sbss
+
+#img_cover: width=1pw, height=1pw*9/16, scale-mode=fill, default-color=$COLOR_LIGHT_GRAY
+
+#btn_favorite: width=44dp, height=44dp, position=abs, gravity=bottom-right
+
+/cell/info: margin="6dp 10dp"
+/cell/info/title: font-family=$SANS_KR_MEDIUM, font-size=1.1, \
+            text-color=$THEME_COLOR_TEXT, text-align=left, line-spacing=-2dp, line-break-mode=word-wrap
+/cell/info/stats: margin-top=2dp, margin-right=50dp, \
+            font-family=$SANS_KR_REGULAR, font-size=1.0, \
+            text-color=$THEME_COLOR_LIGHT_TEXT, text-align=left

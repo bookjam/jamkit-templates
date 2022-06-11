@@ -1,0 +1,14 @@
+=begin cell
+
+=object image: url="https://i.ytimg.com/vi/${video-id}/mqdefault.jpg", style=img_cover
+
+=begin info
+=begin title
+${title}
+=end title
+=end info
+
+=object button: id=btn.favorite, script=remove, image=btn_favorite_on.png, \
+            style=btn_favorite
+
+=end cell

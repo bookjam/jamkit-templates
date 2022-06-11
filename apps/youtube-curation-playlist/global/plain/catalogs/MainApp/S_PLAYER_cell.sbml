@@ -1,0 +1,15 @@
+=begin cell
+
+=object youtube: id=youtube.player, video-id="${video-id}", reuse-id="${video-id}", \
+            autoplay=yes, blocks-ads=yes, control-hidden=yes, info-hidden=yes, subtitle-hidden=yes, \
+            script-when-finished=next_playlist, script-when-not-available=next_playlist, \
+            style=youtube_player
+
+=object section: section=playbar, style=section_playbar
+=begin playbar: id=playbar
+=object progress: type=time, owner="youtube.player", style=progress_time
+=object label: type=time, owner="youtube.player", text="0:00", style=label_time
+=object label: type=time, inverts-value=yes, owner="youtube.player", text="0:00", style=label_time.invert
+=end playbar
+
+=end cell

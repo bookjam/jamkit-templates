@@ -1,0 +1,18 @@
+=begin cell: script-when-loaded=on_loaded
+
+=object blank: style=blank_top
+=object section: section=navibar, style=section_navibar
+=begin navibar: id=navibar
+=begin title
+@{채널}
+=end title
+=object button: image=btn_close.png, script=back, style=btn_navibar.right
+=object blank: style=blank_navibar.line
+=end navibar
+
+=object effect: id=effect.loading, filename="loading.json", style=effect_loading
+=object web: id=web.subscribe, javascript-bridge="__$_bridge", uses-browser-user-agent=yes, \
+            script-when-loaded=on_web_loaded, \
+            hidden=yes, style=web_subscribe
+
+=end cell

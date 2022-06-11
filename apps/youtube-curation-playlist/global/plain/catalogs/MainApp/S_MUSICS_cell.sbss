@@ -1,0 +1,18 @@
+import themes.sbss
+
+#showcase_musics: width=1pw-40dp, height=1ph-(1sbh+1eb+5dp+50dp+15dp), \
+        position=abs, gravity=top, y=1sbh, \
+        column-count=1, cell-size="1pw-40dp, 90dp", \
+        preload-count=15, keeps-offscreen-cells=yes, \
+        scroll-indicator-hidden=yes
+
+#btn_close: width="1pw-40dp", height=50dp, \
+        position=abs, gravity=bottom, y=-(1eb+15dp), \
+        label-font-family=$SANS_KR_REGULAR, label-font-size=1.3, \
+        label-color=$COLOR_WHITE, highlight-label-color=$COLOR_DARK_WHITE, \
+        content-border-radius=20dp, content-border-width=1dp, \
+        content-border-color=$THEME_COLOR_MAIN, content-background-color=$COLOR_BLACK_DEEP_DIM
+
+#web_musics: width=1pw, height=1ph, position=abs, gravity=top
+
+/cell: page-background-color=$COLOR_BLACK_DEEPEST_DIM

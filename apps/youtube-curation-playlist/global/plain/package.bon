@@ -1,0 +1,13 @@
+{
+    id: "com.tuubcast.YouTubePlaylists.1",
+    language: en,
+    version: 1.0,
+    title: "${APP_TITLE}",
+    description: "${APP_DESCRIPTION}",
+    localization: {
+        ko: {
+            title: "${APP_TITLE}",
+            description: "${APP_DESCRIPTION}",
+        }
+    }
+}

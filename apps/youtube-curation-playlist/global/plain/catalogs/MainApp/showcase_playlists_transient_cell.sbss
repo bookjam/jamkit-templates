@@ -1,0 +1,5 @@
+import themes.sbss
+
+#blank_cover: width=1pw, height=1pw*9/16, color=$COLOR_LIGHT_GRAY
+
+/cell: skips-drawing=yes

@@ -1,0 +1,19 @@
+=begin cell: script-when-loaded=on_loaded
+
+=object effect: id=effect.loading, filename="loading.json", style=effect_loading
+=object web: id=web.comments, javascript-bridge="__$_bridge", uses-browser-user-agent=yes, \
+            -content-script@start=cleanup_comments.js, disallowed-url-patterns="www\\.youtube\\.com\\/redirect", \
+            script-when-loaded=on_web_loaded, script-when-start=on_web_start, script-when-prevent=on_web_prevent, \
+            hidden=yes, style=web_comments, console-message-enabled=yes
+
+=object blank: style=blank_top
+=object section: section=navibar, style=section_navibar
+=begin navibar: id=navibar
+=begin title
+@{댓글}
+=end title
+=object button: image=btn_close.png, script=back, style=btn_navibar.right
+=object blank: style=blank_navibar.line
+=end navibar
+
+=end cell

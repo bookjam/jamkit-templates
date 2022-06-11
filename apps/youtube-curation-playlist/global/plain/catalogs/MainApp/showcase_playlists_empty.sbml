@@ -1,0 +1,5 @@
+=begin empty
+
+=object effect: filename="loading.json", style=effect_loading
+
+=end empty

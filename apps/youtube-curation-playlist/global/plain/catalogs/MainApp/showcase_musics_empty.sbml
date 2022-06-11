@@ -1,0 +1,11 @@
+=begin empty
+
+=object effect: filename="loading.json", style=effect_loading
+
+=begin content
+=begin message
+음악 목록을 찾을 수 없습니다.
+=end message
+=end content
+
+=end empty

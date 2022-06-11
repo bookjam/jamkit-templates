@@ -1,0 +1,36 @@
+import themes.sbss
+
+if $SCREEN_WIDTH > 4.7
+    $_NAVIBAR_HEIGHT = 60dp
+    $_NAVIBAR_TITLE_TEXT_SIZE = 1.6
+    $_NAVIBAR_TITLE_SIDE_MARGIN = 10dp
+    $_NAVIBAR_BUTTON_SIZE = 44dp
+    $_NAVIBAR_BUTTON_MARGIN = 5dp
+    $_BACK_BUTTON_SIZE = 44dp
+    $_LOADING_EFFECT_SIZE = 36dp
+    $_LOADING_EFFECT_POSITION_Y = -2dp
+else
+    $_NAVIBAR_HEIGHT = 60dp
+    $_NAVIBAR_TITLE_TEXT_SIZE = 1.6
+    $_NAVIBAR_TITLE_SIDE_MARGIN = 10dp
+    $_NAVIBAR_BUTTON_SIZE = 44dp
+    $_NAVIBAR_BUTTON_MARGIN = 5dp
+    $_BACK_BUTTON_SIZE = 44dp
+    $_LOADING_EFFECT_SIZE = 36dp
+    $_LOADING_EFFECT_POSITION_Y = -2dp
+end
+
+#blank_top: width=1pw, height=1sbh, position=abs, gravity=top, color=$THEME_COLOR_LIGHT_BACKGROUND
+#section_navibar: width=1pw, height=$_NAVIBAR_HEIGHT, margin-top=1sbh, content-background-color=$THEME_COLOR_LIGHT_BACKGROUND
+#btn_navibar.right: width=$_NAVIBAR_BUTTON_SIZE, height=$_NAVIBAR_BUTTON_SIZE, position=abs, gravity=right, x=-$_NAVIBAR_BUTTON_MARGIN
+#blank_navibar.line: color=$COLOR_DARK_WHITE, width=1pw, height=1dp, position=abs, gravity=bottom
+#btn_back: width=$_BACK_BUTTON_SIZE, height=$_BACK_BUTTON_SIZE, vertical-align=middle
+
+#effect_loading: width=$_LOADING_EFFECT_SIZE, height=$_LOADING_EFFECT_SIZE, position=abs, gravity=center, y=$_LOADING_EFFECT_POSITION_Y
+#web_comments: width=1pw, height=1ph-(1sbh+$_NAVIBAR_HEIGHT), position=abs, gravity=top, y=1sbh+$_NAVIBAR_HEIGHT
+
+/cell: page-background-color=$THEME_COLOR_LIGHT_BACKGROUND
+/cell/navibar: display=none
+/cell/navibar/title: display=block, margin="0 $_NAVIBAR_TITLE_SIDE_MARGIN", position=abs, gravity=center, \
+        font-family=@{$SANS_KR_MEDIUM}, font-size=$_NAVIBAR_TITLE_TEXT_SIZE, \
+        text-color=$COLOR_BLACK, text-align=left

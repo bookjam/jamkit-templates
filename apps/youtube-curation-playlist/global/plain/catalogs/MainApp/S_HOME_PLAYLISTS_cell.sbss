@@ -1,0 +1,24 @@
+import themes.sbss
+
+#section_navibar: width=1pw, height=60dp, margin-top=1sbh, content-background-color=$THEME_COLOR_LIGHT_BACKGROUND
+#btn_navibar.right: width=44dp, height=44dp, position=abs, gravity=right, x=-5dp
+#btn_back: width=44dp, height=44dp, vertical-align=middle
+
+#showcase_playlists: width=1pw, height=100%, header-height=74dp, \
+        keeps-offscreen-cells=yes, content-background-color=$THEME_COLOR_LIGHT_BACKGROUND
+
+#cell_subscribe: width=1pw, height=1ph, position=abs, gravity=center
+
+#web_channel: width=1pw, height=1ph-(1sbh+60dp), position=abs, gravity=top, y=1sbh+60dp
+
+/cell: page-background-color=$THEME_COLOR_LIGHT_BACKGROUND
+/cell/navibar: display=none
+/cell/navibar/title: display=block, margin="0 10dp", position=abs, gravity=center, \
+        font-family=$SANS_KR_MEDIUM, font-size=1.6, text-color=$COLOR_BLACK, text-align=left
+
+if $SCREEN_WIDTH > 5
+    #showcase_playlists: column-count=2, cell-size="(1pw-5dp*3)/2, (1pw-5dp*3)/2*9/16+100dp", \
+            cell-spacing=5dp, content-margin=5dp, preload-count=10
+else
+    #showcase_playlists: column-count=1, cell-size="1pw, 1pw*9/16+100dp", preload-count=5
+end

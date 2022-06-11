@@ -1,0 +1,5 @@
+=begin catalog: script-when-loaded=on_loaded
+
+=object image: filename=img_splash.png, style=img_splash
+
+=end catalog

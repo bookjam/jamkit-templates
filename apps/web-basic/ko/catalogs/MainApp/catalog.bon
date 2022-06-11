@@ -1,31 +1,31 @@
 {
-    "title":"MainApp 카탈로그",
-    "version":"1.0",
-    "default-subview":"V_HOME",
+    "title": "MainApp 카탈로그",
+    "version": "1.0",
+    "default-subview": "V_HOME",
     "subviews":{
     	"V_HOME":{
-    		"catalog":"MainApp",
-    		"subcatalog":"home",
-    		"type":"store"
+    		"catalog": "MainApp",
+    		"subcatalog": "home",
+    		"type": "store"
     	},
 		"V_ERROR":{
-    		"catalog":"MainApp",
-    		"subcatalog":"error",
-    		"type":"store"
+    		"catalog": "MainApp",
+    		"subcatalog": "error",
+    		"type": "store"
     	}
 	},
 	"subcatalogs":{
 		"home":{
-    		"controller":"StoreView",
-	    	"hides-navibar":"yes",
-    		"statusbar-style":"Default",
-    		"title":"홈"
+    		"controller": "StoreView",
+	    	"hides-navibar": "yes",
+    		"statusbar-style": "Default",
+    		"title": "홈"
 		},
 		"error":{
-    		"controller":"StoreView",
-	    	"hides-navibar":"yes",
-    		"statusbar-style":"Default",
-    		"title":"에러"
+    		"controller": "StoreView",
+	    	"hides-navibar": "yes",
+    		"statusbar-style": "Default",
+    		"title": "에러"
 		}
 	}
 }

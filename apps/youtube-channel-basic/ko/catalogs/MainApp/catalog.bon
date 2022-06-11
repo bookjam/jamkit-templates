@@ -1,8 +1,8 @@
 {
-    "database-version":"2.0",
-    "default-subview":"V_HOME",
-    "needs-network":"yes",
-    "title":"jamkit",
-    "uses-database":"yes",
-    "version":"1.0"
+    "database-version": "2.0",
+    "default-subview": "V_HOME",
+    "needs-network": "yes",
+    "title": "jamkit",
+    "uses-database": "yes",
+    "version": "1.0"
 }

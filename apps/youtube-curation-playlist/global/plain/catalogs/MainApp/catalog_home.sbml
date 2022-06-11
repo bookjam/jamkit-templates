@@ -1,0 +1,9 @@
+=begin catalog: script-when-back=on_back
+
+=object showcase: id=showcase.home, name=home, row-count=1, page-enabled=yes, \
+            script-when-paging-done=on_showcase_paging, style=showcase_home
+
+=object cell: id=cell.favorites, display-unit=S_FAVORITES, hidden=yes, \
+            style=cell_favorites
+
+=end catalog

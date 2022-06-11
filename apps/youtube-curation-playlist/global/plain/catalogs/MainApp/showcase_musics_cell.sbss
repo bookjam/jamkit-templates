@@ -1,0 +1,15 @@
+import ~/themes.sbss
+
+#effect_playing: width=30dp, height=30dp, position=abs, gravity=right, x=-5dp
+
+#blank_line: color=$COLOR_WHITE_LIGHT_DIM, width=1pw, height=1dp, \
+            position=abs, gravity=bottom
+
+/cell/content: display=block, position=abs, gravity=center, text-color=$THEME_COLOR_WHITE_TEXT
+/cell/content/title: font-family=$SANS_KR_LIGHT, font-size=1.23, text-align=left, line-break-mode=word-wrap
+
+if $STATE == "focused"
+    /cell/content/title: margin-right=45dp
+else
+    #effect_playing: display=none
+end
