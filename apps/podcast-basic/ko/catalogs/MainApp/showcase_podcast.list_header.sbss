@@ -1,30 +1,85 @@
 import themes.sbss
 
-#img_bg: width=1pw, position=abs, scale-mode=fill, alpha=0.3, content-gravity=center
-#img_cover: flow=yes, align=left
-#btn_title: number-of-lines=2, label-font-family=$SANSSERIF_MEDIUM, label-color=$WHITE_COLOR, \
-            label-align=left, line-break-mode=tail-truncation
+#img_bg {
+    width: 1pw;
+    position: absolute;
+    scale-mode: fill;
+    alpha: 0.3;
+    content-gravity: center;
+}
 
---/header: page-background-color=$THEME_COLOR_00
-/header: page-background-color=$BLACK_COLOR
+#img_cover {
+    flow: yes;
+    align: left;
+}
+
+#btn_title {
+    number-of-lines: 2;
+    label-font-family: $SANSSERIF_MEDIUM;
+    label-color: $WHITE_COLOR;
+    label-align: left;
+    line-break-mode: tail-truncation;
+}
+
+/header {
+    page-background-color: $THEME_COLOR_00;
+}
+
+/header {
+    page-background-color: $BLACK_COLOR;
+}
 
 if $SCREEN_WIDTH > 4.7
-    #img_bg: height=200dp
-    #img_cover: width=140dp, height=140dp
-    #btn_title: width=0.7pw, height=140dp, label-font-size=1.7, content-padding="0 0 0 20dp"
+    #img_bg {
+        height: 200dp;
+    }
+
+    #img_cover {
+        width: 140dp;
+        height: 140dp;
+    }
+
+    #btn_title {
+        width: 0.7pw;
+        height: 140dp;
+        label-font-size: 1.7;
+        content-padding: 0 0 0 20dp;
+    }
     if $ORIENTATION == "portrait"
-        /header: margin="30dp 0 20dp 20dp"
+        /header {
+            margin: 30dp 0 20dp 20dp;
+        }
     else
-        /header: margin="30dp 0 20dp 100dp"
+        /header {
+            margin: 30dp 0 20dp 100dp;
+        }
     end
 else
-    #img_bg: height=120dp
-    #img_cover: width=80dp, height=80dp
-    #btn_title: height=80dp, label-font-size=1.25, content-padding="0 0 0 10dp"
-    /header: margin="25dp 0 15dp 15dp"
+    #img_bg {
+        height: 120dp;
+    }
+
+    #img_cover {
+        width: 80dp;
+        height: 80dp;
+    }
+
+    #btn_title {
+        height: 80dp;
+        label-font-size: 1.25;
+        content-padding: 0 0 0 10dp;
+    }
+
+    /header {
+        margin: 25dp 0 15dp 15dp;
+    }
     if $SCREEN_SIZE > 4.0
-        #btn_title: width=0.68pw
+        #btn_title {
+            width: 0.68pw;
+        }
     else
-        #btn_title: width=0.63pw
+        #btn_title {
+            width: 0.63pw;
+        }
     end
 end

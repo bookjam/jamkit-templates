@@ -1,13 +1,51 @@
 import themes.sbss
 
-#youtube_player: width=1pw, height=1pw*9/16, position=abs, gravity=top
+#youtube_player {
+    width: 1pw;
+    height: 1pw*9/16;
+    position: absolute;
+    gravity: top;
+}
 
-#section_playbar: width=1pw, height=34dp, position=abs, gravity=top, y=1pw*9/16+10dp
-#progress_time: width=1pw, height=2dp, position=abs, gravity=top, y=5dp, \
-            track-color=$THEME_COLOR_LIGHT_TEXT, progress-color=$THEME_COLOR_MAIN
-#label_progress: width=100dp, height=20dp, position=abs, \
-            font-family=$SANS_REGULAR, font-size=0.95, text-color=$THEME_COLOR_LIGHT_TEXT
-#label_time: style=label_progress, gravity=left-bottom, text-align=left
-#label_time.invert: style=label_progress, gravity=right-bottom, text-align=right
+#section_playbar {
+    width: 1pw;
+    height: 34dp;
+    position: absolute;
+    gravity: top;
+    y: 1pw*9/16+10dp;
+}
 
-/cell/playbar: display=none
+#progress_time {
+    width: 1pw;
+    height: 2dp;
+    position: absolute;
+    gravity: top;
+    y: 5dp;
+    track-color: $THEME_COLOR_LIGHT_TEXT;
+    progress-color: $THEME_COLOR_MAIN;
+}
+
+#label_progress {
+    width: 100dp;
+    height: 20dp;
+    position: absolute;
+    font-family: $SANS_REGULAR;
+    font-size: 0.95;
+    text-color: $THEME_COLOR_LIGHT_TEXT;
+}
+
+#label_time {
+    style: label_progress;
+    gravity: left-bottom;
+    text-align: left;
+}
+
+#label_time.invert {
+    style: label_progress;
+    gravity: right-bottom;
+    text-align: right;
+}
+
+/cell/playbar {
+    display: none;
+}

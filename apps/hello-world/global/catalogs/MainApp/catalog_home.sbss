@@ -6,6 +6,15 @@ else
     $_WELCOME_TEXT_SIZE = 1.3
 end
 
-/catalog: page-background-color=$THEME_COLOR_BACKGROUND, text-color=$THEME_COLOR_TEXT
-/catalog/welcome: display=block, position=abs, gravity=center, \
-			font-size=$_WELCOME_TEXT_SIZE, text-align=center
+/catalog {
+    page-background-color: $THEME_COLOR_BACKGROUND;
+    text-color: $THEME_COLOR_TEXT;
+}
+
+/catalog/welcome {
+    display: block;
+    position: absolute;
+    gravity: center;
+    font-size: $_WELCOME_TEXT_SIZE;
+    text-align: center;
+}

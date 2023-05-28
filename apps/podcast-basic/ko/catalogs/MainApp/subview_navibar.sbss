@@ -1,13 +1,38 @@
 import themes.sbss
 
-#btn_back: image=subview_btn_back.png, width=44dp, height=44dp, position=abs, gravity=left-bottom
-#label_title: width=0.8pw, height=44dp, position=abs, gravity=top, y=20dp, \
-            font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_100, text-align=center, line-break-mode=tail-truncation
-
-/navibar: page-background-color=$BOOKJAM_COLOR_1
-
 if $SCREEN_WIDTH > 4.7
-    #label_title: font-size=1.4
+    $_BACK_BUTTON_SIZE = 44dp
+    $_TITLE_LABEL_WIDTH = (1pw-44dp*2)
+    $_TITLE_LABEL_HEIGHT = 44dp
+    $_TITLE_TEXT_SIZE = 1.4
 else
-    #label_title: font-size=1.3
+    $_BACK_BUTTON_SIZE = 44dp
+    $_TITLE_LABEL_WIDTH = (1pw-44dp*2)
+    $_TITLE_LABEL_HEIGHT = 44dp
+    $_TITLE_TEXT_SIZE = 1.3
 end
+
+#btn_back {
+    width: $_BACK_BUTTON_SIZE;
+    height: $_BACK_BUTTON_SIZE;
+    position: absolute;
+    gravity: left-bottom;
+    image: subview_btn_back.png;
+}
+
+#label_title {
+    width: $_TITLE_LABEL_WIDTH;
+    height: $_TITLE_LABEL_HEIGHT;
+    position: absolute;
+    gravity: top;
+    y: 1sbh;
+    font-family: $SANS_KR_LIGHT;
+    font-size: $_TITLE_TEXT_SIZE;
+    text-color: $THEME_COLOR_NAVIBAR_TITLE;
+    text-align: center;
+    line-break-mode: tail-truncation;
+}
+
+/navibar {
+    page-background-color: $THEME_COLOR_NAVIBAR_BACKGROUND;
+}
