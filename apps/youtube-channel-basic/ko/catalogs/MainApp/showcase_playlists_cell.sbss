@@ -1,30 +1,73 @@
 import themes.sbss
 
-#img_thumbnail: width=1pw, height=0.5625pw, scale-mode=fill, background-color=$THEME_COLOR_07, margin-bottom=10dp
-#label_title: width=1pw, \
-            font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_100, line-break-mode=tail-truncation, \
-            content-padding="0 10dp", padding="10dp 0"
-#img_count: filename=btn_list_white.png, width=14dp, height=12dp
-#label_count: width=100dp, height=12dp, font-family=$SANSSERIF_BOLD, text-color=$THEME_COLOR_100
+#img_thumbnail {
+    width: 1pw;
+    height: 0.5625pw;
+    scale-mode: fill;
+    background-color: $THEME_COLOR_07;
+    margin-bottom: 10dp;
+}
 
-/cell: display=block, width=1pw, height=1ph, page-background-color=$THEME_COLOR_00
-/cell/count: margin-left=10dp
+#label_title {
+    width: 1pw;
+    font-family: $SANSSERIF_LIGHT;
+    text-color: $THEME_COLOR_100;
+    line-break-mode: tail-truncation;
+    content-padding: 0 10dp;
+    padding: 10dp 0;
+}
+
+#img_count {
+    filename: btn_list_white.png;
+    width: 14dp;
+    height: 12dp;
+}
+
+#label_count {
+    width: 100dp;
+    height: 12dp;
+    font-family: $SANSSERIF_BOLD;
+    text-color: $THEME_COLOR_100;
+}
+
+/cell {
+    display: block;
+    width: 1pw;
+    height: 1ph;
+    page-background-color: $THEME_COLOR_00;
+}
+
+/cell/count {
+    margin-left: 10dp;
+}
 
 if $SCREEN_WIDTH > 4.7
-    #label_title: font-size=1.6
-    #label_count: font-size=1
+    #label_title {
+        font-size: 1.6;
+    }
+
+    #label_count {
+        font-size: 1;
+    }
     if $ORIENTATION == "portrait"
     else
     end
 else
-    #label_title: font-size=1.4
-    #label_count: font-size=0.9
+    #label_title {
+        font-size: 1.4;
+    }
+
+    #label_count {
+        font-size: 0.9;
+    }
 end
 
 if ${item-count} == "1"
-    #label_count: text="${item-count} VIDEO"
+    #label_count {
+        text: ${item-count} VIDEO;
+    }
 else
-    #label_count: text="${item-count} VIDEOS"
+    #label_count {
+        text: ${item-count} VIDEOS;
+    }
 end
-
-

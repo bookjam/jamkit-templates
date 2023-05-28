@@ -1,4 +1,9 @@
 import themes.sbss
 
-/loadmore/message: margin="20dp 0 30dp+1eb 0", \
-        font-family=$SANS_KR_MEDIUM, font-size=1.0, text-color=$THEME_COLOR_LIGHT_TEXT, text-align=center
+/loadmore/message {
+    margin: 20dp 0 30dp+1eb 0;
+    font-family: $SANS_KR_MEDIUM;
+    font-size: 1.0;
+    text-color: $THEME_COLOR_LIGHT_TEXT;
+    text-align: center;
+}

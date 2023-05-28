@@ -1,21 +1,59 @@
 import themes.sbss
 
-#img_logo: id=img.logo, width=54dp, height=54dp, position=abs, gravity=left, x=10dp, \
-        default-color=$COLOR_LIGHT_GRAY, content-border-radius=54dp/2
+#img_logo {
+    id: img.logo;
+    width: 54dp;
+    height: 54dp;
+    position: absolute;
+    gravity: left;
+    x: 10dp;
+    default-color: $COLOR_LIGHT_GRAY;
+    content-border-radius: 54dp/2;
+}
 
-#label_title: width=1pw-(10dp+54dp+10dp+10dp+70dp+20dp), height=30dp, \
-        position=abs, gravity=left, x=10dp+54dp+10dp, y=-10dp, \
-        font-family=$SANS_KR_MEDIUM, font-size=1.3, text-color=$THEME_COLOR_TEXT, text-align=left
+#label_title {
+    width: 1pw-(10dp+54dp+10dp+10dp+70dp+20dp);
+    height: 30dp;
+    position: absolute;
+    gravity: left;
+    x: 10dp+54dp+10dp;
+    y: -10dp;
+    font-family: $SANS_KR_MEDIUM;
+    font-size: 1.3;
+    text-color: $THEME_COLOR_TEXT;
+    text-align: left;
+}
 
-#label_subscriber: width=1pw-(10dp+54dp+10dp+10dp+70dp+20dp), height=20dp, \
-        position=abs, gravity=left, x=10dp+54dp+10dp, y=12dp, \
-        font-family=$SANS_KR_MEDIUM, font-size=1.0, text-color=$THEME_COLOR_LIGHT_TEXT, text-align=left
+#label_subscriber {
+    width: 1pw-(10dp+54dp+10dp+10dp+70dp+20dp);
+    height: 20dp;
+    position: absolute;
+    gravity: left;
+    x: 10dp+54dp+10dp;
+    y: 12dp;
+    font-family: $SANS_KR_MEDIUM;
+    font-size: 1.0;
+    text-color: $THEME_COLOR_LIGHT_TEXT;
+    text-align: left;
+}
 
-#label_subscribe: -selected=yes, width=70dp, height=32dp, position=abs, gravity=right, x=-15dp, \
-        label-font-family=$SANS_KR_REGULAR, label-font-size=1.05, \
-        label-color=$COLOR_WHITE, selected-label-color=$THEME_COLOR_SUBSCRIBE, highlight-label-color=$COLOR_DARK_WHITE, \
-        content-background-color=$THEME_COLOR_SUBSCRIBE, selected-background-color=$COLOR_WHITE, \
-        content-border-radius=3dp
+#label_subscribe {
+    -selected: yes;
+    width: 70dp;
+    height: 32dp;
+    position: absolute;
+    gravity: right;
+    x: -15dp;
+    label-font-family: $SANS_KR_REGULAR;
+    label-font-size: 1.05;
+    label-color: $COLOR_WHITE;
+    selected-label-color: $THEME_COLOR_SUBSCRIBE;
+    highlight-label-color: $COLOR_DARK_WHITE;
+    content-background-color: $THEME_COLOR_SUBSCRIBE;
+    selected-background-color: $COLOR_WHITE;
+    content-border-radius: 3dp;
+}
 
-
-/header: page-background-color=$COLOR_DARK_WHITE
+/header {
+    page-background-color: $COLOR_DARK_WHITE;
+}

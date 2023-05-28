@@ -1,57 +1,221 @@
 import themes.sbss
 
-#label_guide: width=170dp, number-of-lines=0, position=abs, gravity=center, y=-30dp, \
-        font-family=$SANS_KR_LIGHT, font-size=1.0, text-color=$THEME_COLOR_SAVER_TEXT, text-align=center
-#label_onemore: position=abs, gravity=center, y=-30dp, \
-        font-family=$SANS_KR_LIGHT, font-size=1.2, text-color=$COLOR_DARK_WHITE, text-align=center
-#btn_unlock: width=44dp, height=44dp, position=abs, gravity=center, y=40dp
+#label_guide {
+    width: 170dp;
+    number-of-lines: 0;
+    position: absolute;
+    gravity: center;
+    y: -30dp;
+    font-family: $SANS_KR_LIGHT;
+    font-size: 1.0;
+    text-color: $THEME_COLOR_SAVER_TEXT;
+    text-align: center;
+}
 
-#label_timer.time: width=310dp, height=44dp, position=abs, gravity=center, y=-30dp, \
-        font-family=$SANS_THIN, font-size=4.0, text-color=$THEME_COLOR_SAVER_TEXT, text-align=center
+#label_onemore {
+    position: absolute;
+    gravity: center;
+    y: -30dp;
+    font-family: $SANS_KR_LIGHT;
+    font-size: 1.2;
+    text-color: $COLOR_DARK_WHITE;
+    text-align: center;
+}
 
-#section_timer.button: width=310dp, height=40dp, position=abs, gravity=bottom
-#btn_timer: height=1ph, content-padding="0 25dp 0 0.6ph++0.3ph+10dp", \
-        label-font-family=$SANS_KR_LIGHT, label-font-size=1.1, label-align=left, \
-        label-color=$THEME_COLOR_SAVER_TEXT, highlight-label-color=$COLOR_LIGHT_GRAY, selected-label-color=$THEME_COLOR_SAVER_TEXT, \
-        content-border-radius=1ph/2, content-border-width=1dp, content-border-color=$THEME_COLOR_SAVER_TEXT
-#img_timer.button: width=0.6ph, height=0.6ph
+#btn_unlock {
+    width: 44dp;
+    height: 44dp;
+    position: absolute;
+    gravity: center;
+    y: 40dp;
+}
 
-#section_timer.popup: width=1pw, height=1ph, position=abs, gravity=center
-#label_timer.popup.time: width=310dp, height=66dp, \
-        font-family=$SANS_THIN, font-size=5.0, text-color=$THEME_COLOR_SAVER_TEXT, text-align=center
-#label_timer.popup.unit: width=90dp, \
-        font-family=$SANS_THIN, font-size=1.2, text-color=$THEME_COLOR_SAVER_TEXT, text-align=center
-#btn_timer.updown: width=44dp, height=44dp
-#section_popup.option: width=64dp, height=40dp
-#btn_popup.option: width=44dp, height=1ph, position=abs, gravity=center
-#btn_popup.action: width=100dp, height=40dp, margin="0 20dp", \
-        label-font-family=$SANS_THIN, label-font-size=1.2, label-align=center, \
-        label-color=$THEME_COLOR_SAVER_TEXT, highlight-label-color=$COLOR_LIGHT_GRAY, \
-        content-border-radius=40dp/2, content-border-width=1dp, content-border-color=$THEME_COLOR_SAVER_TEXT
-#btn_popup.action.default: style=btn_popup.action, label-color=$COLOR_DARK_WHITE
+#label_timer.time {
+    width: 310dp;
+    height: 44dp;
+    position: absolute;
+    gravity: center;
+    y: -30dp;
+    font-family: $SANS_THIN;
+    font-size: 4.0;
+    text-color: $THEME_COLOR_SAVER_TEXT;
+    text-align: center;
+}
 
-#time.unit: font-size=1.0
+#section_timer.button {
+    width: 310dp;
+    height: 40dp;
+    position: absolute;
+    gravity: bottom;
+}
 
-/cell: page-background-color=$COLOR_BLACK
-/cell/button: display=none
-/cell/button/content: display=block, position=abs, gravity=center, pack=yes
-/cell/button/content/icon: margin="-(0.6ph+0.2ph) 0 0 0.3ph"
-/cell/timer: display=none
-/cell/timer/cancel: text-align=center, margin-top=20dp
-/cell/popup: display=none, active-color=$COLOR_TRANSPARENT
-/cell/popup/content: display=block, position=abs, gravity=center, margin="0 (1pw-310dp)/2", padding="40dp 0", \
-        border-radius=10dp, background-color=$THEME_COLOR_SAVER_POPUP
-/cell/popup/content/labels: text-align=center, margin-top=-15dp
-/cell/popup/content/updown: text-align=right, margin="-70dp 15dp 0 0"
-/cell/popup/content/options: text-align=center, margin-top=30dp
-/cell/popup/content/options/section: display=none, \
-        font-family=$SANS_LIGHT, font-size=1.8, text-color=$THEME_COLOR_SAVER_TEXT
-/cell/popup/content/buttons: text-align=center, margin-top=50dp
+#btn_timer {
+    height: 1ph;
+    content-padding: 0 25dp 0 0.6ph++0.3ph+10dp;
+    label-font-family: $SANS_KR_LIGHT;
+    label-font-size: 1.1;
+    label-align: left;
+    label-color: $THEME_COLOR_SAVER_TEXT;
+    highlight-label-color: $COLOR_LIGHT_GRAY;
+    selected-label-color: $THEME_COLOR_SAVER_TEXT;
+    content-border-radius: 1ph/2;
+    content-border-width: 1dp;
+    content-border-color: $THEME_COLOR_SAVER_TEXT;
+}
+
+#img_timer.button {
+    width: 0.6ph;
+    height: 0.6ph;
+}
+
+#section_timer.popup {
+    width: 1pw;
+    height: 1ph;
+    position: absolute;
+    gravity: center;
+}
+
+#label_timer.popup.time {
+    width: 310dp;
+    height: 66dp;
+    font-family: $SANS_THIN;
+    font-size: 5.0;
+    text-color: $THEME_COLOR_SAVER_TEXT;
+    text-align: center;
+}
+
+#label_timer.popup.unit {
+    width: 90dp;
+    font-family: $SANS_THIN;
+    font-size: 1.2;
+    text-color: $THEME_COLOR_SAVER_TEXT;
+    text-align: center;
+}
+
+#btn_timer.updown {
+    width: 44dp;
+    height: 44dp;
+}
+
+#section_popup.option {
+    width: 64dp;
+    height: 40dp;
+}
+
+#btn_popup.option {
+    width: 44dp;
+    height: 1ph;
+    position: absolute;
+    gravity: center;
+}
+
+#btn_popup.action {
+    width: 100dp;
+    height: 40dp;
+    margin: 0 20dp;
+    label-font-family: $SANS_THIN;
+    label-font-size: 1.2;
+    label-align: center;
+    label-color: $THEME_COLOR_SAVER_TEXT;
+    highlight-label-color: $COLOR_LIGHT_GRAY;
+    content-border-radius: 40dp/2;
+    content-border-width: 1dp;
+    content-border-color: $THEME_COLOR_SAVER_TEXT;
+}
+
+#btn_popup.action.default {
+    style: btn_popup.action;
+    label-color: $COLOR_DARK_WHITE;
+}
+
+#time.unit {
+    font-size: 1.0;
+}
+
+/cell {
+    page-background-color: $COLOR_BLACK;
+}
+
+/cell/button {
+    display: none;
+}
+
+/cell/button/content {
+    display: block;
+    position: absolute;
+    gravity: center;
+    pack: yes;
+}
+
+/cell/button/content/icon {
+    margin: -(0.6ph+0.2ph) 0 0 0.3ph;
+}
+
+/cell/timer {
+    display: none;
+}
+
+/cell/timer/cancel {
+    text-align: center;
+    margin-top: 20dp;
+}
+
+/cell/popup {
+    display: none;
+    active-color: $COLOR_TRANSPARENT;
+}
+
+/cell/popup/content {
+    display: block;
+    position: absolute;
+    gravity: center;
+    margin: 0 (1pw-310dp)/2;
+    padding: 40dp 0;
+    border-radius: 10dp;
+    background-color: $THEME_COLOR_SAVER_POPUP;
+}
+
+/cell/popup/content/labels {
+    text-align: center;
+    margin-top: -15dp;
+}
+
+/cell/popup/content/updown {
+    text-align: right;
+    margin: -70dp 15dp 0 0;
+}
+
+/cell/popup/content/options {
+    text-align: center;
+    margin-top: 30dp;
+}
+
+/cell/popup/content/options/section {
+    display: none;
+    font-family: $SANS_LIGHT;
+    font-size: 1.8;
+    text-color: $THEME_COLOR_SAVER_TEXT;
+}
+
+/cell/popup/content/buttons {
+    text-align: center;
+    margin-top: 50dp;
+}
 
 if $ORIENTATION == "portrait"
-    #section_timer.button: y=-(1eb+100dp)
-    #section_timer: y=-(1eb+100dp)
+    #section_timer.button {
+        y: -(1eb+100dp);
+    }
+
+    #section_timer {
+        y: -(1eb+100dp);
+    }
 else
-    #section_timer.button: y=-60dp
-    #section_timer: y=-40dp
+    #section_timer.button {
+        y: -60dp;
+    }
+
+    #section_timer {
+        y: -40dp;
+    }
 end

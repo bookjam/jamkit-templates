@@ -1,5 +1,13 @@
 import themes.sbss
 
-#web: width=1pw, height=1ph, position=abs, gravity=center
+#web {
+    width: 1pw;
+    height: 1ph;
+    position: absolute;
+    gravity: center;
+}
 
-/catalog: page-background-color=$THEME_COLOR_BACKGROUND, text-color=$THEME_COLOR_TEXT
+/catalog {
+    page-background-color: $THEME_COLOR_BACKGROUND;
+    text-color: $THEME_COLOR_TEXT;
+}

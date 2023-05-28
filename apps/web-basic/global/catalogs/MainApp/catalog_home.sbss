@@ -1,12 +1,35 @@
 import themes.sbss
 
-#web: width=1pw, height=1ph-(1sbh+3dp), position=abs, gravity=top, y=1sbh+3dp, \
-        edge-swipe-enabled=yes, handles-back-key=yes
+#web {
+    width: 1pw;
+    height: 1ph-(1sbh+3dp);
+    position: absolute;
+    gravity: top;
+    y: 1sbh+3dp;
+    edge-swipe-enabled: yes;
+    handles-back-key: yes;
+}
 
-#blank_top: color=$THEME_COLOR_MAIN, width=1pw, height=1sbh+3dp, \
-        position=abs, gravity=top
+#blank_top {
+    color: $THEME_COLOR_MAIN;
+    width: 1pw;
+    height: 1sbh+3dp;
+    position: absolute;
+    gravity: top;
+}
 
-#progress_web: progress-color=$COLOR_WHITE, track-color=$THEME_COLOR_MAIN, \
-        width=1pw, height=2dp, position=abs, gravity=top, y=1sbh, hidden=yes
+#progress_web {
+    progress-color: $COLOR_WHITE;
+    track-color: $THEME_COLOR_MAIN;
+    width: 1pw;
+    height: 2dp;
+    position: absolute;
+    gravity: top;
+    y: 1sbh;
+    hidden: yes;
+}
 
-/catalog: page-background-color=$THEME_COLOR_BACKGROUND, text-color=$THEME_COLOR_TEXT
+/catalog {
+    page-background-color: $THEME_COLOR_BACKGROUND;
+    text-color: $THEME_COLOR_TEXT;
+}

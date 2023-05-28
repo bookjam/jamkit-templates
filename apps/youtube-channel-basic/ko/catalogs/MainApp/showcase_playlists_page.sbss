@@ -1,20 +1,47 @@
 import themes.sbss
 
-#showcase_videos: width=1pw, height=1ph, \
-                toolbar-position=top, toolbar-height=0.5625pw
+#showcase_videos {
+    width: 1pw;
+    height: 1ph;
+    toolbar-position: top;
+    toolbar-height: 0.5625pw;
+}
 
-/page: page-background-color=$THEME_COLOR_02
+/page {
+    page-background-color: $THEME_COLOR_02;
+}
 
 if $SCREEN_WIDTH > 4.7
-    #showcase_videos: cell-spacing=0.01pw, content-margin=0.01pw
+    #showcase_videos {
+        cell-spacing: 0.01pw;
+        content-margin: 0.01pw;
+    }
     if $ORIENTATION == "portrait"
-        #showcase_videos: action-when-selected=play, params-when-selected="player=Y_001", \
-                        column-count=3, cell-size="0, 0.33pw", more-count=21, has-toolbar=yes
+        #showcase_videos {
+            action-when-selected: play;
+            params-when-selected: player=Y_001;
+            column-count: 3;
+            cell-size: 0, 0.33pw;
+            more-count: 21;
+            has-toolbar: yes;
+        }
     else
-        #showcase_videos: action-when-selected=popup, \
-                        column-count=4, cell-size="0, 0.25pw", more-count=24, has-toolbar=no
+        #showcase_videos {
+            action-when-selected: popup;
+            column-count: 4;
+            cell-size: 0, 0.25pw;
+            more-count: 24;
+            has-toolbar: no;
+        }
     end
 else
-    #showcase_videos: action-when-selected=play, params-when-selected="player=Y_001", \
-                    column-count=1, cell-size="1pw, 0.27pw", more-count=20, content-margin="0.0125pw 0", has-toolbar=yes
+    #showcase_videos {
+        action-when-selected: play;
+        params-when-selected: player=Y_001;
+        column-count: 1;
+        cell-size: 1pw, 0.27pw;
+        more-count: 20;
+        content-margin: 0.0125pw 0;
+        has-toolbar: yes;
+    }
 end
